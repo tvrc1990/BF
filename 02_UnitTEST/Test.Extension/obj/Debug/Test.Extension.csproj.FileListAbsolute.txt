@@ -1,0 +1,14 @@
+F:\Demo\BaseFramework\02_UnitTEST\Test.Extension\bin\Debug\Test.Extension.dll
+F:\Demo\BaseFramework\02_UnitTEST\Test.Extension\bin\Debug\Test.Extension.pdb
+F:\Demo\BaseFramework\02_UnitTEST\Test.Extension\obj\Debug\Test.Extension.csprojResolveAssemblyReference.cache
+F:\Demo\BaseFramework\02_UnitTEST\Test.Extension\obj\Debug\Test.Extension.dll
+F:\Demo\BaseFramework\02_UnitTEST\Test.Extension\obj\Debug\Test.Extension.pdb
+F:\Demo\BaseFramework\02_UnitTEST\Test.Extension\bin\Debug\Unity.Extension.dll
+F:\Demo\BaseFramework\02_UnitTEST\Test.Extension\bin\Debug\Unity.Extension.pdb
+C:\Users\aw7l\Desktop\w1e-BaseFramework--v1.0.0.0\BaseFramework-\02_UnitTEST\Test.Extension\obj\Debug\Test.Extension.csprojResolveAssemblyReference.cache
+C:\Users\aw7l\Desktop\w1e-BaseFramework--v1.0.0.0\BaseFramework-\02_UnitTEST\Test.Extension\obj\Debug\Test.Extension.dll
+C:\Users\aw7l\Desktop\w1e-BaseFramework--v1.0.0.0\BaseFramework-\02_UnitTEST\Test.Extension\obj\Debug\Test.Extension.pdb
+C:\Users\aw7l\Desktop\w1e-BaseFramework--v1.0.0.0\BaseFramework-\02_UnitTEST\Test.Extension\bin\Debug\Test.Extension.dll
+C:\Users\aw7l\Desktop\w1e-BaseFramework--v1.0.0.0\BaseFramework-\02_UnitTEST\Test.Extension\bin\Debug\Test.Extension.pdb
+C:\Users\aw7l\Desktop\w1e-BaseFramework--v1.0.0.0\BaseFramework-\02_UnitTEST\Test.Extension\bin\Debug\BF.Unity.Extension.dll
+C:\Users\aw7l\Desktop\w1e-BaseFramework--v1.0.0.0\BaseFramework-\02_UnitTEST\Test.Extension\bin\Debug\BF.Unity.Extension.pdb
