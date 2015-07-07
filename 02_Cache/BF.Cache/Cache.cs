@@ -17,6 +17,7 @@ namespace BF.Cache
         /// 以秒为基础单位默认10分钟 ///
         public int TimeOut
         {
+            //app config undefined
             get { return _timeOut == 0 ? 600 : _timeOut; }
             set { _timeOut = value; }
         }
