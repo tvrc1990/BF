@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{36F2DE37-1296-4E4F-8B03-ED06EDDA68C4}</ProjectGuid>
+    <ProjectGuid>{A1FE476B-5BF2-4632-81E8-084C420E2029}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Test.Extension</RootNamespace>
-    <AssemblyName>Test.Extension</AssemblyName>
+    <RootNamespace>Test.FluentValidation</RootNamespace>
+    <AssemblyName>Test.FluentValidation</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -50,17 +50,13 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnityTest.cs" />
+    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\01_Unity\BF.Unity.Extension\BF.Unity.Extension.csproj">
-      <Project>{9cd329ce-8072-4a61-ad25-081146395f79}</Project>
-      <Name>BF.Unity.Extension</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\03_Logging\BF.Log\BF.Log.csproj">
-      <Project>{76df156c-98d3-45a1-ab8a-264f2104cc95}</Project>
-      <Name>BF.Log</Name>
+    <ProjectReference Include="..\..\05_Validator\FluentValidation\FluentValidation.csproj">
+      <Project>{dae0249b-4f69-4ac9-9a17-aa23e0795316}</Project>
+      <Name>FluentValidation</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
