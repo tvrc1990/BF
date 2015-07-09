@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="CryptoExtension.cs" />
     <Compile Include="EnumExtension.cs" />
+    <Compile Include="ExceptionExtension.cs" />
     <Compile Include="NumberExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringExtension.cs" />

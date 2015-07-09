@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using BF.Unity.Extension;
+using BF.Log;
 
 namespace Test.Extension
 {
@@ -12,7 +13,7 @@ namespace Test.Extension
         {
             const string strObj = "Test Content";
             var descDecrypt = strObj.DESCEncrypt();
-            var descResult=descDecrypt.DESCDecrypt();
+            var descResult = descDecrypt.DESCDecrypt();
 
             var md5Result = strObj.MD5Encrypt();
             Assert.AreEqual(31, md5Result.Length);
@@ -28,7 +29,7 @@ namespace Test.Extension
 
             Assert.AreEqual(1, stringObj.ToIntArray(',')[0]);
             Assert.AreEqual("1", stringObj.ToStrArray(',')[0]);
-            Assert.AreEqual("Test",strObj.Left(4));
+            Assert.AreEqual("Test", strObj.Left(4));
             Assert.AreEqual(8, strObj.GetSize());
 
             var temp = stringHtml.HtmlEncode();
@@ -37,6 +38,31 @@ namespace Test.Extension
 
         }
 
-    
+        [TestMethod]
+        public void TestLog()
+        {
+            var log = LogFactory.ErrorInstance();
+            var log2 = LogFactory.ErrorInstance();
+            Assert.AreNotEqual(null, log);
+        }
+
+        [TestMethod]
+        public void TestEceptionExtension()
+        {
+            string content = "";
+            try
+            {
+                string t = "123sd";
+                Convert.ToInt32(t);
+            }
+            catch (Exception e)
+            {
+
+                content = e.ToLog();
+            }
+             Assert.AreNotEqual("", content);
+        }
+        
+
     }
 }

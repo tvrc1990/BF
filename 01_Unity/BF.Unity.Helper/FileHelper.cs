@@ -19,7 +19,7 @@ using System.Threading.Tasks;
 
 
 
-namespace OSharp.Utility.IO
+namespace BF.Unity.Helper
 {
     /// <summary>
     /// 文件辅助操作类
