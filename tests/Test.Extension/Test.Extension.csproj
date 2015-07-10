@@ -54,11 +54,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\01_Unity\BF.Unity.Extension\BF.Unity.Extension.csproj">
+    <ProjectReference Include="..\..\src\01_Unity\BF.Unity.Extension\BF.Unity.Extension.csproj">
       <Project>{9cd329ce-8072-4a61-ad25-081146395f79}</Project>
       <Name>BF.Unity.Extension</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\03_Log\BF.Log\BF.Log.csproj">
+    <ProjectReference Include="..\..\src\03_Log\BF.Log\BF.Log.csproj">
       <Project>{76df156c-98d3-45a1-ab8a-264f2104cc95}</Project>
       <Name>BF.Log</Name>
     </ProjectReference>

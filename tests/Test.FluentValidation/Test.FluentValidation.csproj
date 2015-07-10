@@ -54,7 +54,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\05_Validator\FluentValidation\FluentValidation.csproj">
+    <ProjectReference Include="..\..\src\05_Validator\FluentValidation\FluentValidation.csproj">
       <Project>{dae0249b-4f69-4ac9-9a17-aa23e0795316}</Project>
       <Name>FluentValidation</Name>
     </ProjectReference>
