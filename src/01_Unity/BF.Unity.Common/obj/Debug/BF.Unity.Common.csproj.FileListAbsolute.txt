@@ -1,0 +1,5 @@
+C:\Users\aw7l\Desktop\w1e-BaseFramework--v1.0.0.0\BaseFramework-\01_Unity\BF.Unity.Common\bin\Debug\BF.Unity.Common.dll
+C:\Users\aw7l\Desktop\w1e-BaseFramework--v1.0.0.0\BaseFramework-\01_Unity\BF.Unity.Common\bin\Debug\BF.Unity.Common.pdb
+C:\Users\aw7l\Desktop\w1e-BaseFramework--v1.0.0.0\BaseFramework-\01_Unity\BF.Unity.Common\obj\Debug\BF.Unity.Common.csprojResolveAssemblyReference.cache
+C:\Users\aw7l\Desktop\w1e-BaseFramework--v1.0.0.0\BaseFramework-\01_Unity\BF.Unity.Common\obj\Debug\BF.Unity.Common.dll
+C:\Users\aw7l\Desktop\w1e-BaseFramework--v1.0.0.0\BaseFramework-\01_Unity\BF.Unity.Common\obj\Debug\BF.Unity.Common.pdb
