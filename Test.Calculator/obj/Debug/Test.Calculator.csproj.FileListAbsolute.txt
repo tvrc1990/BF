@@ -1,0 +1,8 @@
+D:\Private\My code\BF\Test.Calculator\bin\Debug\Test.Calculator.dll
+D:\Private\My code\BF\Test.Calculator\bin\Debug\Test.Calculator.pdb
+D:\Private\My code\BF\Test.Calculator\bin\Debug\Antlr3.Runtime.dll
+D:\Private\My code\BF\Test.Calculator\bin\Debug\NCalc.dll
+D:\Private\My code\BF\Test.Calculator\bin\Debug\NCalc.pdb
+D:\Private\My code\BF\Test.Calculator\obj\Debug\Test.Calculator.csprojResolveAssemblyReference.cache
+D:\Private\My code\BF\Test.Calculator\obj\Debug\Test.Calculator.dll
+D:\Private\My code\BF\Test.Calculator\obj\Debug\Test.Calculator.pdb

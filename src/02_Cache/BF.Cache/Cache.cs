@@ -24,7 +24,7 @@ namespace BF.Cache
 
         private ExpirationType ExpirationPolicy { set; get; }
 
-        public virtual void Add(string key, T value)
+        public virtual void Set(string key, T value)
         {
             if (string.IsNullOrWhiteSpace(key) || value.Equals(null)) return;
             var expirationPolicy = new CacheItemPolicy();
@@ -46,7 +46,7 @@ namespace BF.Cache
             if (result == null && loadFunc != null)
             {
                 result = loadFunc(loadParm);
-                Add(key, result);
+                Set(key, result);
             }
             return result;
         }
@@ -60,7 +60,7 @@ namespace BF.Cache
         public virtual void Update(string key, T value)
         {
             Remove(key);
-            Add(key, value);
+            Set(key, value);
         }
     }
 }

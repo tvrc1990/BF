@@ -1,0 +1,6 @@
+****jsencrypt前端加密*******************************************************************
+
+github主页 https://github.com/travist/jsencrypt    
+
+官方网站   http://travistidwell.com/jsencrypt/  
+ 

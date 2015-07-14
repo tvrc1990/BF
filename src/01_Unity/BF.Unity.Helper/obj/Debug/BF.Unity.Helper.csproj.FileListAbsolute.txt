@@ -3,3 +3,8 @@ C:\Users\aw7l\Desktop\w1e-BaseFramework--v1.0.0.0\BaseFramework-\01_Unity\BF.Uni
 C:\Users\aw7l\Desktop\w1e-BaseFramework--v1.0.0.0\BaseFramework-\01_Unity\BF.Unity.Helper\obj\Debug\BF.Unity.Helper.dll
 C:\Users\aw7l\Desktop\w1e-BaseFramework--v1.0.0.0\BaseFramework-\01_Unity\BF.Unity.Helper\obj\Debug\BF.Unity.Helper.pdb
 C:\Users\aw7l\Desktop\w1e-BaseFramework--v1.0.0.0\BaseFramework-\01_Unity\BF.Unity.Helper\obj\Debug\BF.Unity.Helper.csprojResolveAssemblyReference.cache
+D:\Private\My code\BF\src\01_Unity\BF.Unity.Helper\bin\Debug\BF.Unity.Helper.dll
+D:\Private\My code\BF\src\01_Unity\BF.Unity.Helper\bin\Debug\BF.Unity.Helper.pdb
+D:\Private\My code\BF\src\01_Unity\BF.Unity.Helper\obj\Debug\BF.Unity.Helper.csprojResolveAssemblyReference.cache
+D:\Private\My code\BF\src\01_Unity\BF.Unity.Helper\obj\Debug\BF.Unity.Helper.dll
+D:\Private\My code\BF\src\01_Unity\BF.Unity.Helper\obj\Debug\BF.Unity.Helper.pdb
