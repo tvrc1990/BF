@@ -1,0 +1,7 @@
+E:\DiskF\Project\BF\src\07_Orm\Dapper\Dapper.Extension\obj\Debug\Dapper.Extension.csprojResolveAssemblyReference.cache
+E:\DiskF\Project\BF\src\07_Orm\Dapper\Dapper.Extension\bin\Debug\Dapper.Extension.dll
+E:\DiskF\Project\BF\src\07_Orm\Dapper\Dapper.Extension\bin\Debug\Dapper.Extension.pdb
+E:\DiskF\Project\BF\src\07_Orm\Dapper\Dapper.Extension\bin\Debug\Dapper.Library.dll
+E:\DiskF\Project\BF\src\07_Orm\Dapper\Dapper.Extension\bin\Debug\Dapper.Library.pdb
+E:\DiskF\Project\BF\src\07_Orm\Dapper\Dapper.Extension\obj\Debug\Dapper.Extension.dll
+E:\DiskF\Project\BF\src\07_Orm\Dapper\Dapper.Extension\obj\Debug\Dapper.Extension.pdb

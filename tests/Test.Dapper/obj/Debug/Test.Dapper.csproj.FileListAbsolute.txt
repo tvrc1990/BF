@@ -1,0 +1,5 @@
+E:\DiskF\Project\BF\tests\Test.Dapper\bin\Debug\Test.Dapper.dll
+E:\DiskF\Project\BF\tests\Test.Dapper\bin\Debug\Test.Dapper.pdb
+E:\DiskF\Project\BF\tests\Test.Dapper\obj\Debug\Test.Dapper.dll
+E:\DiskF\Project\BF\tests\Test.Dapper\obj\Debug\Test.Dapper.pdb
+E:\DiskF\Project\BF\tests\Test.Dapper\obj\Debug\Test.Dapper.csprojResolveAssemblyReference.cache

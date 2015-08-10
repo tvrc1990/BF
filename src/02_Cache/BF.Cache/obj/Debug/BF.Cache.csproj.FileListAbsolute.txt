@@ -8,3 +8,8 @@ C:\Users\aw7l\Desktop\w1e-BaseFramework--v1.0.0.0\BaseFramework-\02_Cache\BF.Cac
 C:\Users\aw7l\Desktop\w1e-BaseFramework--v1.0.0.0\BaseFramework-\02_Cache\BF.Cache\obj\Debug\BF.Cache.dll
 C:\Users\aw7l\Desktop\w1e-BaseFramework--v1.0.0.0\BaseFramework-\02_Cache\BF.Cache\obj\Debug\BF.Cache.pdb
 C:\Users\aw7l\Desktop\w1e-BaseFramework--v1.0.0.0\BaseFramework-\02_Cache\BF.Cache\obj\Debug\BF.Cache.csprojResolveAssemblyReference.cache
+E:\DiskF\Project\BF\src\02_Cache\BF.Cache\bin\Debug\BF.Cache.dll
+E:\DiskF\Project\BF\src\02_Cache\BF.Cache\bin\Debug\BF.Cache.pdb
+E:\DiskF\Project\BF\src\02_Cache\BF.Cache\obj\Debug\BF.Cache.dll
+E:\DiskF\Project\BF\src\02_Cache\BF.Cache\obj\Debug\BF.Cache.pdb
+E:\DiskF\Project\BF\src\02_Cache\BF.Cache\obj\Debug\BF.Cache.csprojResolveAssemblyReference.cache

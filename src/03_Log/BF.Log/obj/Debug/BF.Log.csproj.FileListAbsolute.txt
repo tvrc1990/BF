@@ -5,3 +5,8 @@ C:\Users\aw7l\Desktop\w1e-BaseFramework--v1.0.0.0\BaseFramework-\03_Logging\BF.L
 C:\Users\aw7l\Desktop\w1e-BaseFramework--v1.0.0.0\BaseFramework-\03_Logging\BF.Log\obj\Debug\BF.Log.pdb
 C:\Users\aw7l\Desktop\w1e-BaseFramework--v1.0.0.0\BaseFramework-\03_Logging\BF.Log\bin\Debug\BF.Unity.Common.dll
 C:\Users\aw7l\Desktop\w1e-BaseFramework--v1.0.0.0\BaseFramework-\03_Logging\BF.Log\bin\Debug\BF.Unity.Common.pdb
+E:\DiskF\Project\BF\src\03_Log\BF.Log\bin\Debug\BF.Log.dll
+E:\DiskF\Project\BF\src\03_Log\BF.Log\bin\Debug\BF.Log.pdb
+E:\DiskF\Project\BF\src\03_Log\BF.Log\obj\Debug\BF.Log.dll
+E:\DiskF\Project\BF\src\03_Log\BF.Log\obj\Debug\BF.Log.pdb
+E:\DiskF\Project\BF\src\03_Log\BF.Log\obj\Debug\BF.Log.csprojResolveAssemblyReference.cache

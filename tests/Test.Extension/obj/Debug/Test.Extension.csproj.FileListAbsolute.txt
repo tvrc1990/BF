@@ -30,3 +30,12 @@ D:\Private\My code\BF\tests\Test.Extension\bin\Debug\BF.Log.pdb
 D:\Private\My code\BF\tests\Test.Extension\obj\Debug\Test.Extension.csprojResolveAssemblyReference.cache
 D:\Private\My code\BF\tests\Test.Extension\obj\Debug\Test.Extension.dll
 D:\Private\My code\BF\tests\Test.Extension\obj\Debug\Test.Extension.pdb
+E:\DiskF\Project\BF\tests\Test.Extension\bin\Debug\Test.Extension.dll
+E:\DiskF\Project\BF\tests\Test.Extension\bin\Debug\Test.Extension.pdb
+E:\DiskF\Project\BF\tests\Test.Extension\bin\Debug\BF.Log.dll
+E:\DiskF\Project\BF\tests\Test.Extension\bin\Debug\BF.Unity.Extension.dll
+E:\DiskF\Project\BF\tests\Test.Extension\bin\Debug\BF.Unity.Extension.pdb
+E:\DiskF\Project\BF\tests\Test.Extension\bin\Debug\BF.Log.pdb
+E:\DiskF\Project\BF\tests\Test.Extension\obj\Debug\Test.Extension.csprojResolveAssemblyReference.cache
+E:\DiskF\Project\BF\tests\Test.Extension\obj\Debug\Test.Extension.dll
+E:\DiskF\Project\BF\tests\Test.Extension\obj\Debug\Test.Extension.pdb
