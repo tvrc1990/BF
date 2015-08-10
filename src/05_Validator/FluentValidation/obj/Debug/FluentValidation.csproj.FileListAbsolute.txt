@@ -96,3 +96,4 @@ E:\DiskF\Project\BF\src\05_Validator\FluentValidation\obj\Debug\sv\FluentValidat
 E:\DiskF\Project\BF\src\05_Validator\FluentValidation\obj\Debug\tr\FluentValidation.resources.dll
 E:\DiskF\Project\BF\src\05_Validator\FluentValidation\obj\Debug\FluentValidation.dll
 E:\DiskF\Project\BF\src\05_Validator\FluentValidation\obj\Debug\FluentValidation.pdb
+E:\DiskF\Project\BF\src\05_Validator\FluentValidation\obj\Debug\FluentValidation.csprojResolveAssemblyReference.cache

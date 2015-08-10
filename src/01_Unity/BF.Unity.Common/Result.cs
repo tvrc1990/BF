@@ -8,5 +8,10 @@ namespace BF.Unity.Common
 {
     public class Result
     {
+        public string Code { set; get; }
+
+        public string Message { set; get; }
+
+
     }
 }
