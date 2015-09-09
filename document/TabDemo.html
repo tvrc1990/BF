@@ -1,0 +1,59 @@
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="easyUI/themes/metro/easyui.css" />
+    <link rel="stylesheet" type="text/css" href="easyUI/themes/icon.css" />
+
+    <script type="text/javascript" src="easyUI/script/jquery.min.js"></script>
+    <script type="text/javascript" src="easyUI/script/jquery.easyui.min.js"></script>
+</head>
+<body>
+    <p id="hidA">hid a</p>
+    <p id="hidC">hid c</p>
+    <p id="Close"> Close</p>
+    <div class="easyui-tabs" data-options="fit:true,plain:true">
+
+    </div>
+</body>
+ <script>
+     $(function () {
+         $('.easyui-tabs').tabs('add', { title: 'tab2', });
+
+         $('#hidA').click(function () {
+             CloseTab();
+             $('.easyui-tabs').tabs('add', { title: 'tab1', });
+             $('.easyui-tabs').tabs('select', 'A');
+
+
+         });
+
+         $('#hidC').click(function () {
+             CloseTab();
+             $('.easyui-tabs').tabs('add', { title: 'tab3', });
+             $('.easyui-tabs').tabs('select', 'C');
+         });
+
+         $('#Close').click(function () {
+             CloseTab();
+         })
+         function CloseTab()
+         {
+             var tab = $('.easyui-tabs').tabs('tabs');
+             var length = tab.length;
+             for (var i = 0; i < length; i++) {
+                 var onetab = tab[0];
+                 var title = onetab.panel('options').tab.text();
+                 //var title = onetab.panel('options').title;
+                 $('.easyui-tabs').tabs('close', title);
+             }
+         }
+         $('.easyui-tabs').tabs({
+             onSelect: function (title, index) {
+     
+                 
+             }
+         });
+     })
+
+ </script>
+</html>
