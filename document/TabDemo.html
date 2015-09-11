@@ -6,6 +6,25 @@
 
     <script type="text/javascript" src="easyUI/script/jquery.min.js"></script>
     <script type="text/javascript" src="easyUI/script/jquery.easyui.min.js"></script>
+    <style>
+        .row {
+            width:480px;
+            overflow:hidden;
+            font-size:12px;
+        }
+            .row .cell {
+                padding-top:15px;
+                height:25px;
+                line-height:25px;
+                float:left;
+            }
+
+            .row .lable {
+                width:100px;
+            }
+
+
+    </style>
 </head>
 <body>
     <p id="hidA">hid a</p>
@@ -14,17 +33,50 @@
     <div class="easyui-tabs" data-options="fit:true,plain:true">
 
     </div>
+
+    <div id="dialog">
+        <div class="row">
+            <div class="cell lable">A</div>
+            <div class="cell"><input type="text" /></div>
+            <div class="cell"></div>
+        </div>
+        <div class="row">
+            <div class="cell lable">A</div>
+            <div class="cell"><input type="text" /></div>
+            <div class="cell"></div>
+        </div>
+        <div class="row">
+            <div class="cell lable">A</div>
+            <div class="cell"><input type="text" /></div>
+            <div class="cell"></div>
+        </div>
+        <div class="row">
+            <div class="cell">A</div>
+            <div class="cell"><input type="text" /></div>
+            <div class="cell"></div>
+        </div>
+        <div class="row">
+            <div class="cell lable">A</div>
+            <div class="cell"><input type="text" /></div>
+            <div class="cell"></div>
+        </div>
+        <div class="row">
+            <div class="cell lable">A</div>
+            <div class="cell"><input type="text" /></div>
+            <div class="cell"></div>
+        </div>
+    </div>
+
 </body>
  <script>
      $(function () {
          $('.easyui-tabs').tabs('add', { title: 'tab2', });
 
          $('#hidA').click(function () {
+             $('#dialog').dialog("open");
              CloseTab();
-             $('.easyui-tabs').tabs('add', { title: 'tab1', });
+             $('.easyui-tabs').tabs('add', { title: 'tab1', content: $("#baseInfo").load('demo.html').html() });
              $('.easyui-tabs').tabs('select', 'A');
-
-
          });
 
          $('#hidC').click(function () {
@@ -53,6 +105,33 @@
                  
              }
          });
+
+
+         $('#dialog').dialog({
+             title: 'My Dialog2',
+             width: 500,
+             height: 450,
+             closed: true,
+             cache: false,
+             minimizable: false,
+             maximizable: false,
+             collapsible:false,
+             modal: true,
+             buttons: [{
+                 text: 'save',
+                 iconCls: 'icon-add',
+                 handler: function () {
+                     alert('save')
+                 }
+             }, {
+                 text: 'close',
+                 iconCls: 'icon-save',
+                 handler: function () {
+                     alert('close')
+                 }
+             }]
+         });
+
      })
 
  </script>
