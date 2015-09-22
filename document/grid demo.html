@@ -1,0 +1,112 @@
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="easyUI/themes/metro/easyui.css" />
+    <link rel="stylesheet" type="text/css" href="easyUI/themes/icon.css" />
+
+    <script type="text/javascript" src="easyUI/script/jquery.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+	<script src="jquery.jqprint-0.3.js"></script>
+	<script src="jquery.fileupload.js"></script>
+    <script type="text/javascript" src="easyUI/script/jquery.easyui.min.js"></script>
+    
+</head>
+<body>
+<a id='hid_Column'>HidColumn</a>
+  <a id='show_Column'>ShowColumn</a>
+  <a id='add_Row'>AddRow</a>
+  <a id='print'>Print</a>
+  <a id='Upload'>Upload</a>
+  <p></P>
+  <div>
+	  <div id='content'>
+		<table id="test"></table>
+	  </div>  
+  </div>
+  <p></P>
+  <div>
+     <p><input type="file" id="file1" name="file" /></p>
+     <p><img id="img1" alt="上传成功啦" src="" /></p>
+  </div>
+  
+</body>
+   
+<script>
+	$(function(){
+	   var data=[
+	   {code:1,name:'名称名称名称名称名称名称名称名称名称',num1:10,num2:20,num3:30},
+	   {code:1,name:'test1',num1:10,num2:20,num3:30},
+	   {code:'',name:'T',num3:'x'},
+	   ]
+	   $('#test').datagrid({	
+		    nowrap: true,
+			pagination:true,
+			width : 850, 
+			data:data,
+			columns:[[
+				{field:'code',title:'code',width:100},
+				{field:'name',title:'name',width:100,nowarp : false, },
+				{field:'num1',title:'num1',width:100},
+				{field:'num2',title:'num2',width:100},
+				{field:'num3',title:'num3',width:100},
+			]]
+		});
+		      	
+		$('#add_Row').click(function(){		
+		    $('#test').datagrid('appendRow',{         
+                name: 'add row',
+                num3:1000				
+            });
+		});
+		
+		$('#show_Column').click(function(){		
+		    $('#test').datagrid('showColumn', 'name'); //
+		});
+		
+	    $('#hid_Column').click(function(){		   
+		    $('#test').datagrid('hideColumn', 'name'); //			
+	    });
+		
+		$('#print').click(function(){
+		  $('.datagrid-pager').hide();
+		  $('#content').jqprint();
+		  setTimeout($('.datagrid-pager').show(), 50 )
+		});
+		
+		$(function () {
+            $("#Upload").click(function () {
+                ajaxFileUpload();
+            })
+        })
+		
+        function ajaxFileUpload() {
+            $.ajaxFileUpload
+            (
+                {
+                    url: '/upload.aspx', //用于文件上传的服务器端请求地址
+                    secureuri: false, //是否需要安全协议，一般设置为false
+                    fileElementId: 'file1', //文件上传域的ID
+                    dataType: 'json', //返回值类型 一般设置为json
+                    success: function (data, status)  //服务器成功响应处理函数
+                    {
+                        $("#img1").attr("src", data.imgurl);
+                        if (typeof (data.error) != 'undefined') {
+                            if (data.error != '') {
+                                alert(data.error);
+                            } else {
+                                alert(data.msg);
+                            }
+                        }
+                    },
+                    error: function (data, status, e)//服务器响应失败处理函数
+                    {
+                        alert(e);
+                    }
+                }
+            )
+            return false;
+        }
+		
+	});
+</script>
+</html>
