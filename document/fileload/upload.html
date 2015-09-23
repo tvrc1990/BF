@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="easyUI/script/jquery.min.js"></script>
+    <script src="easyUI/script/jquery.ui.widget.js"></script>
+    <script src="easyUI/script/jquery.iframe-transport.js"></script>
+    <script src="easyUI/script/jquery.fileupload.js"></script>
+</head>
+<body>
+
+    <div class="box" style='height:25px; background-color:gray;    width:559px;'>
+          <div class="option" style='height:25px;   background-color:green;    width:559px;'></div>
+    </div>
+
+    <img id="img_show" />
+    <p id="but_Uoload">Upload</p>
+    <input style="display:none;" id="fileupload" type="file" name="files[]" data-url="/Default/Index" multiple>
+</body>
+
+<script>
+    $(function () {
+
+        
+
+        $('.box').hover(function () {
+            $(this).toggle(1000);
+        })
+
+
+        
+        $('#fileupload').fileupload({
+            dataType: 'json',  
+            autoUpload: true,
+            acceptFileTypes:  /(\.|\/)(gif|jpe?g|png)$/i,  
+            maxNumberOfFiles : 1,  
+            maxFileSize: 5000000,
+            done: function (e, data) {
+                $.each(data.result, function (index, file) {
+                    $('#img_show').attr('src',data.result.pic);
+                });
+            }
+        });
+       
+    });
+</script>
+
+</html>
+
+
+string upImg = HttpContext.Request.Files[0];
+            string fileName = System.IO.Path.GetFileName(upImg.FileName);
+            string filePhysicalPath = Server.MapPath("/upload/" + fileName);
+            string pic = "", error = "";
+            try
+            {
+                upImg.SaveAs(filePhysicalPath);
+                pic = "/upload/" + fileName;
+            }
+            catch (Exception ex)
+            {
+                error = ex.Message;
+            }
+
+            return Json(new
+            {
+                pic = pic,
+                error = error
+            }, "text/plain");
+			
+			
+			
+			
+			
+			<link rel="stylesheet" type="text/css" href="style/index.css" />
+
+<div class="sub-content">
+    <div class="item-content">
+
+        <div class="row">
+            <div class="cell lb">A1</div>
+            <div class="cell lb">B2</div>
+            <div class="cell">C3</div>
+            <div class="cell">D4</div>
+            <div class="cell">E5</div>
+            <div class="cell">F6</div>
+            <div class="cell">G7</div>
+            <div class="cell">H8</div>
+            <div class="cell">I9</div>
+            <div class="cell">J10</div>
+            <div class="cell">K11</div>
+            <div class="cell">L12</div>
+            <div class="cell">M13</div>
+            <div class="cell">N14</div>
+        </div>
+		
+		<div class="row">
+            <div class="cell w7">A1</div>
+            <div class="cell w7">A1</div>
+        </div>
+		
+		<div class="row">
+            <div class="cell w7" style="height:400px; ">
+			   <img src='a.JPG' style="border:0px; height:375px; width:559px;" />
+			   <div style='height:25px;  padding-right:4px;  width:559px;'>Q</div>
+			   <div class="cell w7 option" style="height:400px; "></div>
+			</div>
+            <div class="cell w7" style="height:400px;">
+			   <img src='a.JPG' style="border:0px; height:375px;  width:559px;" />
+			   <div  style='height:25px; padding-right:4px;  width:559px;'>H</div>
+			</div>
+        </div>
+		
+	</div>
+	
+</div>
