@@ -1,0 +1,157 @@
+<html>
+<head>
+    <link href="easyUI/themes/index.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="easyUI/themes/metro/easyui.css" />
+    <script src="easyUI/script/jquery.min.js"></script>
+    <script type="text/javascript" src="easyUI/script/jquery.easyui.min.js"></script>
+    <script src="easyUI/script/jquery.form.js"></script>
+
+    <style>
+       .row .img-box {
+            height: 400px !important;
+            position: relative;
+        }
+
+        .img-item {
+            border: 0px;
+            height: 375px;
+            width: 559px;
+        }
+
+        .img-option {
+            height: 24px;
+            padding-right: 4px;
+            width: 561px;
+            display: none;
+            transform:initial;
+            position: absolute;
+            left:0;
+            background-color:#000;
+           filter:alpha(Opacity=60);-moz-opacity:0.6;opacity: 0.6;
+           text-align:right;
+        }
+
+        .img-option span {
+            font-size:12px;
+            padding:4px;
+            color:white;
+            cursor:pointer;
+            line-height:24px;
+        }
+
+        .img-title {
+            height: 25px;
+            padding-right: 4px;
+            width: 559px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(function () {
+
+            $('.img-box').mouseover(function () {
+                $(this).find('.img-option').show();
+            }).mouseleave(function () {
+                $(this).find('.img-option').hide();
+            });
+
+            $('.img-edit').click(function () {
+
+                $('#dialog').html('');
+
+                var type = $(this).parents('img-box').attr('type');
+                var imgId = $(this).parents('img-box').attr('imgid');
+
+                var formHtml = '<form id="filePost"  widht:100px;" action="/Default/Index?type=' + type + '&imgId=' + imgId + '" method="post" enctype="multipart/form-data"><input type="file" name="files[]"></form>';
+                $('#dialog').append(formHtml);
+                $('#dialog').dialog("open");
+            });
+
+            $('.img-delete').click(function () {
+                var imgId = $(this).parents('img-box').attr('imgid');
+            });
+
+            $('#dialog').dialog({
+                title: 'My Dialog2',
+                width: 300,
+                height: 150,
+                closed: true,
+                cache: false,
+                minimizable: false,
+                maximizable: false,
+                collapsible: false,
+                modal: true,
+                buttons: [{
+                    text: 'save',
+                    iconCls: 'icon-add',
+                    handler: function () {
+                        $('#filePost').ajaxSubmit({
+                            success: function (responseContent, status) {
+                                var result = JSON.parse(responseContent);
+                                $('.img-box[type="a"]').find('img').attr('src', result.pic);
+                            }
+                        })
+                    }
+                }, {
+                    text: 'close',
+                    iconCls: 'icon-save',
+                    handler: function () {
+ 
+                    }
+                }]
+            });
+
+        });
+    </script>
+</head>
+<body>
+
+    <div class="sub-content">
+        <div class="item-content">
+
+            <div class="row">
+                <div class="cell lb">A1</div>
+                <div class="cell lb">B2</div>
+                <div class="cell">C3</div>
+                <div class="cell">D4</div>
+                <div class="cell">E5</div>
+                <div class="cell">F6</div>
+                <div class="cell">G7</div>
+                <div class="cell">H8</div>
+                <div class="cell">I9</div>
+                <div class="cell">J10</div>
+                <div class="cell">K11</div>
+                <div class="cell">L12</div>
+                <div class="cell">M13</div>
+                <div class="cell">N14</div>
+            </div>
+
+            <div class="row">
+                <div class="cell w7">A1</div>
+                <div class="cell w7">A1</div>
+            </div>
+
+            <div class="row">
+
+                <div class="cell w7 img-box" type="a" imgid="1">
+                    <div class="img-option"><span class="img-edit">ÐÞ¸Ä</span><span class="img-delete">É¾³ý</span></div>
+                    <img class="img-item" />
+                    <div class="img-title">Q</div>
+                </div>
+
+                <div class="cell w7 img-box" type="b" imgid="2">
+                    <div class="img-option"><span>ÐÞ¸Ä</span><span>É¾³ý</span></div>
+                    <img class="img-item"  />
+                    <div class="img-title">Q</div>
+                </div>
+
+            </div>
+
+            <div id="dialog"></div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
