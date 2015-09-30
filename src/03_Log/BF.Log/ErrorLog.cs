@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace BF.Log
 {
-   public class ErrorLog:ILog
+    public class ErrorLog : ILog
     {
-       public void Write(string content)
+        public void Write(string content)
         {
-            throw new NotImplementedException();
+            log4net.Config.BasicConfigurator.Configure();
+            var logger = log4net.LogManager.GetLogger(typeof(ILog));
+            logger.Error(content);
         }
     }
 }

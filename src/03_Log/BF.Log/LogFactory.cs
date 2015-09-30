@@ -15,62 +15,92 @@ namespace BF.Log
         private static ILog errorInstance;
         private static readonly object ErrorLock = new object();
 
-        private static ILog operateInstance;
-        private static readonly object OperateLock = new object();
+        private static ILog debugInstance;
+        private static readonly object DebugLock = new object();
 
-        private static ILog trackInstance;
-        private static readonly object TrackLock = new object();
+        private static ILog infoInstance;
+        private static readonly object InfoLock = new object();
+
+        private static ILog warnInstance;
+        private static readonly object WarnLock = new object();
 
         //app config undefined
         //需要移动到配置系统
         private static string errorLogConfig = "BF.Log.ErrorLog";
-        private static string trackLogConfig = "BF.Log.TrackLog";
-        private static string operateLogConfig = "BF.Log.OperateLog";
+        private static string InfoLogConfig = "BF.Log.InfoLog";
+        private static string debugLogConfig = "BF.Log.DebugLog";
+        private static string warmLogConfig = "BF.Log.WarnLog";
 
-
-        public static ILog ErrorInstance()
+        public static ILog Error
         {
-            if (errorInstance == null)
+            get
             {
-                lock (ErrorLock)
+                if (errorInstance == null)
                 {
-                    if (errorInstance == null)
+                    lock (ErrorLock)
                     {
-                        errorInstance = Instance(errorLogConfig);
+                        if (errorInstance == null)
+                        {
+                            errorInstance = Instance(errorLogConfig);
+                        }
                     }
                 }
+                return errorInstance;
             }
-            return errorInstance;
         }
 
-        public static ILog TrackFactory()
+        public static ILog Info
         {
-            if (trackInstance == null)
+            get
             {
-                lock (TrackLock)
+                if (infoInstance == null)
                 {
-                    if (trackInstance == null)
+                    lock (InfoLock)
                     {
-                        trackInstance = Instance(trackLogConfig);
+                        if (infoInstance == null)
+                        {
+                            infoInstance = Instance(InfoLogConfig);
+                        }
                     }
                 }
+                return infoInstance;
             }
-            return trackInstance;
         }
 
-        public static ILog OperateFactory()
+        public static ILog Debug
         {
-            if (operateInstance == null)
+            get
             {
-                lock (OperateLock)
+                if (debugInstance == null)
                 {
-                    if (operateInstance == null)
+                    lock (DebugLock)
                     {
-                        operateInstance = Instance(operateLogConfig);
+                        if (debugInstance == null)
+                        {
+                            debugInstance = Instance(debugLogConfig);
+                        }
                     }
                 }
+                return debugInstance;
             }
-            return operateInstance;
+        }
+
+        public static ILog Warn
+        {
+            get
+            {
+                if (warnInstance == null)
+                {
+                    lock (WarnLock)
+                    {
+                        if (warnInstance == null)
+                        {
+                            warnInstance = Instance(warmLogConfig);
+                        }
+                    }
+                }
+                return warnInstance;
+            }
         }
 
         private static ILog Instance(string className)

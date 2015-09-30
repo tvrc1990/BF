@@ -8,3 +8,7 @@ E:\DiskF\Project\BF\src\01_Unity\BF.Unity.Extension\bin\Debug\BF.Unity.Extension
 E:\DiskF\Project\BF\src\01_Unity\BF.Unity.Extension\obj\Debug\BF.Unity.Extension.dll
 E:\DiskF\Project\BF\src\01_Unity\BF.Unity.Extension\obj\Debug\BF.Unity.Extension.pdb
 E:\DiskF\Project\BF\src\01_Unity\BF.Unity.Extension\obj\Debug\BF.Unity.Extension.csprojResolveAssemblyReference.cache
+D:\Private\My code\BF\src\01_Unity\BF.Unity.Extension\bin\Debug\BF.Unity.Extension.dll
+D:\Private\My code\BF\src\01_Unity\BF.Unity.Extension\bin\Debug\BF.Unity.Extension.pdb
+D:\Private\My code\BF\src\01_Unity\BF.Unity.Extension\obj\Debug\BF.Unity.Extension.dll
+D:\Private\My code\BF\src\01_Unity\BF.Unity.Extension\obj\Debug\BF.Unity.Extension.pdb

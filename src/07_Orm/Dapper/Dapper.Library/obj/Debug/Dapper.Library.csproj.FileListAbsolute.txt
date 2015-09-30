@@ -1,5 +1,0 @@
-E:\DiskF\Project\BF\src\07_Orm\Dapper\Dapper.Library\bin\Debug\Dapper.Library.dll
-E:\DiskF\Project\BF\src\07_Orm\Dapper\Dapper.Library\bin\Debug\Dapper.Library.pdb
-E:\DiskF\Project\BF\src\07_Orm\Dapper\Dapper.Library\obj\Debug\Dapper.Library.csprojResolveAssemblyReference.cache
-E:\DiskF\Project\BF\src\07_Orm\Dapper\Dapper.Library\obj\Debug\Dapper.Library.dll
-E:\DiskF\Project\BF\src\07_Orm\Dapper\Dapper.Library\obj\Debug\Dapper.Library.pdb

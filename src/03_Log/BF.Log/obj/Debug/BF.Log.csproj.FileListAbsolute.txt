@@ -10,3 +10,10 @@ E:\DiskF\Project\BF\src\03_Log\BF.Log\bin\Debug\BF.Log.pdb
 E:\DiskF\Project\BF\src\03_Log\BF.Log\obj\Debug\BF.Log.dll
 E:\DiskF\Project\BF\src\03_Log\BF.Log\obj\Debug\BF.Log.pdb
 E:\DiskF\Project\BF\src\03_Log\BF.Log\obj\Debug\BF.Log.csprojResolveAssemblyReference.cache
+D:\Private\My code\BF\src\03_Log\BF.Log\bin\Debug\BF.Log.dll
+D:\Private\My code\BF\src\03_Log\BF.Log\bin\Debug\BF.Log.pdb
+D:\Private\My code\BF\src\03_Log\BF.Log\bin\Debug\log4net.dll
+D:\Private\My code\BF\src\03_Log\BF.Log\bin\Debug\log4net.xml
+D:\Private\My code\BF\src\03_Log\BF.Log\obj\Debug\BF.Log.csprojResolveAssemblyReference.cache
+D:\Private\My code\BF\src\03_Log\BF.Log\obj\Debug\BF.Log.dll
+D:\Private\My code\BF\src\03_Log\BF.Log\obj\Debug\BF.Log.pdb

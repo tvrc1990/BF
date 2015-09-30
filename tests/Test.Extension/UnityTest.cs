@@ -41,9 +41,14 @@ namespace Test.Extension
         [TestMethod]
         public void TestLog()
         {
-            var log = LogFactory.ErrorInstance();
-            var log2 = LogFactory.ErrorInstance();
-            Assert.AreNotEqual(null, log);
+            LogFactory.Debug.Write("debug log");
+
+            LogFactory.Error.Write("Error log");
+
+            LogFactory.Info.Write("Info log");
+
+            LogFactory.Warn.Write("Warn log");
+
         }
 
         [TestMethod]
