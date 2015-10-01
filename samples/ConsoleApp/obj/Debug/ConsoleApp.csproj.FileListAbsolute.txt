@@ -1,0 +1,10 @@
+D:\Private\My code\BF\samples\ConsoleApp\bin\Debug\ConsoleApp.exe
+D:\Private\My code\BF\samples\ConsoleApp\bin\Debug\ConsoleApp.pdb
+D:\Private\My code\BF\samples\ConsoleApp\bin\Debug\BF.Log.dll
+D:\Private\My code\BF\samples\ConsoleApp\bin\Debug\log4net.dll
+D:\Private\My code\BF\samples\ConsoleApp\bin\Debug\BF.Log.pdb
+D:\Private\My code\BF\samples\ConsoleApp\bin\Debug\log4net.xml
+D:\Private\My code\BF\samples\ConsoleApp\obj\Debug\ConsoleApp.csprojResolveAssemblyReference.cache
+D:\Private\My code\BF\samples\ConsoleApp\obj\Debug\ConsoleApp.exe
+D:\Private\My code\BF\samples\ConsoleApp\obj\Debug\ConsoleApp.pdb
+D:\Private\My code\BF\samples\ConsoleApp\bin\Debug\ConsoleApp.exe.config

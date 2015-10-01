@@ -4,3 +4,15 @@ E:\DiskF\Project\BF\tests\Test.Dapper\obj\Debug\Test.Dapper.dll
 E:\DiskF\Project\BF\tests\Test.Dapper\obj\Debug\Test.Dapper.pdb
 E:\DiskF\Project\BF\tests\Test.Dapper\obj\Debug\Test.Dapper.csprojResolveAssemblyReference.cache
 E:\DiskF\Project\BF\tests\Test.Dapper\bin\Debug\Test.Dapper.dll.config
+D:\Private\My code\BF\tests\Test.Dapper\bin\Debug\Test.Dapper.dll.config
+D:\Private\My code\BF\tests\Test.Dapper\bin\Debug\Test.Dapper.dll
+D:\Private\My code\BF\tests\Test.Dapper\bin\Debug\Test.Dapper.pdb
+D:\Private\My code\BF\tests\Test.Dapper\bin\Debug\Dapper.Extension.dll
+D:\Private\My code\BF\tests\Test.Dapper\bin\Debug\Dapper.Library.dll
+D:\Private\My code\BF\tests\Test.Dapper\bin\Debug\BF.DB.Core.dll
+D:\Private\My code\BF\tests\Test.Dapper\bin\Debug\Dapper.Extension.pdb
+D:\Private\My code\BF\tests\Test.Dapper\bin\Debug\Dapper.Library.pdb
+D:\Private\My code\BF\tests\Test.Dapper\bin\Debug\BF.DB.Core.pdb
+D:\Private\My code\BF\tests\Test.Dapper\obj\Debug\Test.Dapper.csprojResolveAssemblyReference.cache
+D:\Private\My code\BF\tests\Test.Dapper\obj\Debug\Test.Dapper.dll
+D:\Private\My code\BF\tests\Test.Dapper\obj\Debug\Test.Dapper.pdb

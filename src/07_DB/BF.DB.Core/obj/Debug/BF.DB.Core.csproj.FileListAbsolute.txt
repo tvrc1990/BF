@@ -1,0 +1,5 @@
+D:\Private\My code\BF\src\07_DB\BF.DB.Core\bin\Debug\BF.DB.Core.dll
+D:\Private\My code\BF\src\07_DB\BF.DB.Core\bin\Debug\BF.DB.Core.pdb
+D:\Private\My code\BF\src\07_DB\BF.DB.Core\obj\Debug\BF.DB.Core.dll
+D:\Private\My code\BF\src\07_DB\BF.DB.Core\obj\Debug\BF.DB.Core.pdb
+D:\Private\My code\BF\src\07_DB\BF.DB.Core\obj\Debug\BF.DB.Core.csprojResolveAssemblyReference.cache

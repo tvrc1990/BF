@@ -13,3 +13,8 @@ E:\DiskF\Project\BF\src\02_Cache\BF.Cache\bin\Debug\BF.Cache.pdb
 E:\DiskF\Project\BF\src\02_Cache\BF.Cache\obj\Debug\BF.Cache.dll
 E:\DiskF\Project\BF\src\02_Cache\BF.Cache\obj\Debug\BF.Cache.pdb
 E:\DiskF\Project\BF\src\02_Cache\BF.Cache\obj\Debug\BF.Cache.csprojResolveAssemblyReference.cache
+D:\Private\My code\BF\src\02_Cache\BF.Cache\bin\Debug\BF.Cache.dll
+D:\Private\My code\BF\src\02_Cache\BF.Cache\bin\Debug\BF.Cache.pdb
+D:\Private\My code\BF\src\02_Cache\BF.Cache\obj\Debug\BF.Cache.dll
+D:\Private\My code\BF\src\02_Cache\BF.Cache\obj\Debug\BF.Cache.pdb
+D:\Private\My code\BF\src\02_Cache\BF.Cache\obj\Debug\BF.Cache.csprojResolveAssemblyReference.cache
