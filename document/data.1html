@@ -14,7 +14,19 @@
 
 
     <script type="text/javascript" src="easyUI/script/jquery.easyui.min.js"></script>
+    <style>
+        .icon-defalut {
+            background: url('default.png') no-repeat 2px 4px;
+        }
 
+        .icon-a {
+            background: url('icon-a.gif') no-repeat;
+        }
+
+        .icon-p {
+            background: url('icon-p.gif') no-repeat;
+        }
+    </style>
 </head>
 <body>
     <a id='hid_Column'>HidColumn</a>
@@ -22,9 +34,11 @@
     <a id='add_Row'>AddRow</a>
     <a id='print'>Print</a>
     <a id='Upload'>Upload</a>
+    <a id="update_node_icon">update_node_icon</a>
     <p></p>
     <div>
         <div id='content'>
+            <ul id="tree"></ul>
             <table id="test"></table>
         </div>
     </div>
@@ -44,12 +58,37 @@
 
 
     $(function () {
-        var rowData=[
+
+
+        $('#update_node_icon').click(function () {
+            debugger;
+            var nowNode = $('#tree').tree('getSelected');
+            //ÐÞ¸ÄÍ¼±ê
+            $(nowNode.target).find(".tree-icon").removeClass('icon-defalut').removeClass('icon-a').addClass('icon-p');
+
+            var parentNode = $('#tree').tree('getParent', nowNode.target);
+            $(parentNode.target).find(".tree-icon").removeClass('icon-defalut').removeClass('icon-p').addClass('icon-a');
+
+            var childrenNode = $('#tree').tree('getChildren', nowNode.target);
+            for (var i = 0; i < childrenNode.length; i++)
+            {
+                $(childrenNode[i].target).find(".tree-icon").removeClass('icon-defalut').removeClass('icon-p').addClass('icon-a');
+            }
+          
+
+  
+        });
+        var treeData = [{ id: 1, text: 'test1' }, { id: 2, text: 'test2', iconCls: 'icon-defalut', children: [{ id: 3, text: 'test3' }, { id: 4, text: 'test4', children: [{ id: 5, text: 'test5' }, { id: 6, text: 'test6' }] }] }]
+        $('#tree').tree({
+            data: treeData
+        });
+
+        var rowData = [
                  { code: 1, name: 'test0', num1: 10, num2: 20, num3: 30 },
                  { code: 1, name: 'test1', num1: 10, num2: 20, num3: 30 },
         ];
 
-        var footerData=[{ num1: "Total", num2: 18.00 }];
+        var footerData = [{ num1: "Total", num2: 18.00 }];
 
         var data = {
             total: 2,
