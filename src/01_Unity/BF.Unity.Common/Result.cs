@@ -12,6 +12,6 @@ namespace BF.Unity.Common
 
         public string Message { set; get; }
 
-
+        public object Data { set; get; }
     }
 }

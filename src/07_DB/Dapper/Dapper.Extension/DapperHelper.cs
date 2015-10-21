@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using BF.DB.Core;
 namespace Dapper.Extension
 {
-    public class DapperHelper<T> : IDBCore<T> where T : class, new()
+    public class DapperHelper<T> : IDbCore<T> where T : class, new()
     {
         DbBase dbBase = null;
         SqlQuery sqlQuery = null;

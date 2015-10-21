@@ -40,7 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cache.cs" />
+    <Compile Include="MemoryCache.cs" />
+    <Compile Include="ICache.cs" />
     <Compile Include="ExpirationType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

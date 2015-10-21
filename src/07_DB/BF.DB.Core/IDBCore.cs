@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BF.DB.Core
 {
-    public interface IDBCore<T> where T : class, new()
+    public interface IDbCore<T> where T : class, new()
     {
 
         object Add(T t);

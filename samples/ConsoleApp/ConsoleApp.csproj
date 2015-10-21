@@ -49,12 +49,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\03_Log\BF.Log\BF.Log.csproj">
-      <Project>{76df156c-98d3-45a1-ab8a-264f2104cc95}</Project>
-      <Name>BF.Log</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>

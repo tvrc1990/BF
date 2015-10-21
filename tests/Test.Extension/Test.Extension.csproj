@@ -58,9 +58,13 @@
       <Project>{9cd329ce-8072-4a61-ad25-081146395f79}</Project>
       <Name>BF.Unity.Extension</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\src\03_Log\BF.Log\BF.Log.csproj">
-      <Project>{76df156c-98d3-45a1-ab8a-264f2104cc95}</Project>
-      <Name>BF.Log</Name>
+    <ProjectReference Include="..\..\src\01_Unity\BF.Unity.Helper\BF.Unity.Helper.csproj">
+      <Project>{4575c83d-7c03-4000-a535-498c34648530}</Project>
+      <Name>BF.Unity.Helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\03_Log\BF.Log.Core\BF.Log.Core.csproj">
+      <Project>{326bf78d-a38d-4cc9-a6bb-16512349ed91}</Project>
+      <Name>BF.Log.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

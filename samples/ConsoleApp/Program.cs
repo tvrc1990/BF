@@ -1,5 +1,4 @@
-﻿using BF.Log;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +10,7 @@ namespace ConsoleApp
     {
         static void Main(string[] args)
         {
-            LogFactory.Debug.Write("debug log");
+           // LogFactory.Debug.Write("debug log");
 
             //LogFactory.Error.Write("Error log");
 
