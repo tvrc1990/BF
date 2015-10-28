@@ -1,0 +1,130 @@
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <link rel="stylesheet" type="text/css" href="easyUI/themes/metro/easyui.css" />
+    <link rel="stylesheet" type="text/css" href="easyUI/themes/icon.css" />
+    <script src="easyUI/script/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.1.0.js"></script>
+    <script src="jquery.jqprint-0.3.js"></script>
+
+    <script src="easyUI/script/jquery.ui.widget.js"></script>
+    <script src="easyUI/script/jquery.iframe-transport.js"></script>
+    <script src="jquery.fileupload.js"></script>
+
+
+    <script type="text/javascript" src="easyUI/script/jquery.easyui.min.js"></script>
+    <style>
+        .icon-defalut {
+            background: url('default.png') no-repeat 2px 4px;
+        }
+
+        .icon-a {
+            background: url('icon-a.gif') no-repeat;
+        }
+
+        .icon-p {
+            background: url('icon-p.gif') no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <a id='hid_Column'>HidColumn</a>
+    <a id='show_Column'>ShowColumn</a>
+    <a id='add_Row'>AddRow</a>
+    <a id='print'>Print</a>
+    <a id='Upload'>Upload</a>
+    <a id="update_node_icon">update_node_icon</a>
+    <p></p>
+    <div>
+        <div id='content'>
+            <ul id="tree"></ul>
+            <table id="test"></table>
+        </div>
+    </div>
+    <p></p>
+    <div>
+        <p>
+            <input type="file" id="file1" name="file[]" />
+        </p>
+        <p>
+            <img id="img1" alt="upload" />
+        </p>
+    </div>
+
+</body>
+
+<script>
+
+
+    $(function () {
+
+
+        $('#update_node_icon').click(function () {
+            debugger;
+            var nowNode = $('#tree').tree('getSelected');
+            //修改图标
+            $(nowNode.target).find(".tree-icon").removeClass('icon-defalut').removeClass('icon-a').addClass('icon-p');
+
+            var parentNode = $('#tree').tree('getParent', nowNode.target);
+            $(parentNode.target).find(".tree-icon").removeClass('icon-defalut').removeClass('icon-p').addClass('icon-a');
+
+            var childrenNode = $('#tree').tree('getChildren', nowNode.target);
+            for (var i = 0; i < childrenNode.length; i++)
+            {
+                $(childrenNode[i].target).find(".tree-icon").removeClass('icon-defalut').removeClass('icon-p').addClass('icon-a');
+            }
+          
+
+  
+        });
+        var treeData = [{ id: 1, text: 'test1' }, { id: 2, text: 'test2', iconCls: 'icon-defalut', children: [{ id: 3, text: 'test3' }, { id: 4, text: 'test4', children: [{ id: 5, text: 'test5' }, { id: 6, text: 'test6' }] }] }]
+        $('#tree').tree({
+            data: treeData
+        });
+
+        var rowData = [
+                 { code: 1, name: 'test0', num1: 10, num2: 20, num3: 30 },
+                 { code: 1, name: 'test1', num1: 10, num2: 20, num3: 30 },
+        ];
+
+        var footerData = [{ num1: "Total", num2: 18.00 }];
+
+        var data = {
+            total: 2,
+            rows: rowData,
+            footer: footerData
+        };
+
+        $('#test').datagrid({
+            nowrap: true,
+            pagination: true,
+            showFooter: true,
+            width: 850,
+            data: data,
+            columns: [[
+				{ field: 'code', title: 'code', width: 100 },
+				{ field: 'name', title: 'name', width: 100, nowarp: false, },
+				{ field: 'num1', title: 'num1', width: 100 },
+				{ field: 'num2', title: 'num2', width: 100 },
+				{ field: 'num3', title: 'num3', width: 100 },
+            ]]
+        });
+
+        var p = $('#test').datagrid('getPager');
+        $(p).pagination({
+            pageSize: 5,//每页显示的记录条数，默认为10 
+            pageList: [5, 10, 15],//可以设置每页记录条数的列表 
+            beforePageText: '第',//页数文本框前显示的汉字 
+            afterPageText: '页    共 {pages} 页',
+            displayMsg: '当前显示 {from} - {to} 条记录   共 {total} 条记录',
+            /*onBeforeRefresh:function(){
+                $(this).pagination('loading');
+                alert('before refresh');
+                $(this).pagination('loaded');
+            }*/
+        });
+
+    });
+</script>
+</html>

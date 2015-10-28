@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{36F2DE37-1296-4E4F-8B03-ED06EDDA68C4}</ProjectGuid>
+    <ProjectGuid>{D0630464-764D-47DE-9FC1-DA41E75D6C31}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Test.Extension</RootNamespace>
-    <AssemblyName>Test.Extension</AssemblyName>
+    <RootNamespace>Test.Dapper</RootNamespace>
+    <AssemblyName>Test.Dapper</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Data" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -50,28 +51,21 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnityTest.cs" />
+    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\01_Unity\BF.Unity.Extension\BF.Unity.Extension.csproj">
-      <Project>{9cd329ce-8072-4a61-ad25-081146395f79}</Project>
-      <Name>BF.Unity.Extension</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\src\01_Unity\BF.Unity.Helper\BF.Unity.Helper.csproj">
-      <Project>{4575c83d-7c03-4000-a535-498c34648530}</Project>
-      <Name>BF.Unity.Helper</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\src\03_Log\BF.Log.Core\BF.Log.Core.csproj">
-      <Project>{326bf78d-a38d-4cc9-a6bb-16512349ed91}</Project>
-      <Name>BF.Log.Core</Name>
-    </ProjectReference>
+    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="log.config" />
+    <ProjectReference Include="..\..\src\07_DB\Dapper\Dapper.Extension\Dapper.Extension.csproj">
+      <Project>{4a077858-8218-4977-a5b9-9ee617b3efeb}</Project>
+      <Name>Dapper.Extension</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\07_DB\Dapper\Dapper.Library\Dapper.Library.csproj">
+      <Project>{8874400b-b890-41fb-bdea-87a5c48c18f5}</Project>
+      <Name>Dapper.Library</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

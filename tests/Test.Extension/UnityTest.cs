@@ -1,8 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using BF.Unity.Extension;
-using BF.Log;
-
+using BF.Unity.Helper;
+using BF.Log.Core;
 namespace Test.Extension
 {
     [TestClass]
@@ -41,9 +41,14 @@ namespace Test.Extension
         [TestMethod]
         public void TestLog()
         {
-            var log = LogFactory.ErrorInstance();
-            var log2 = LogFactory.ErrorInstance();
-            Assert.AreNotEqual(null, log);
+            LogProvider.Debug.Write("debug log");
+
+            LogProvider.Error.Write("Error log");
+
+            LogProvider.Info.Write("Info log");
+
+            LogProvider.Warn.Write("Warn log");
+
         }
 
         [TestMethod]
@@ -61,6 +66,16 @@ namespace Test.Extension
                 content = e.ToLog();
             }
              Assert.AreNotEqual("", content);
+        }
+
+          [TestMethod]
+        public void TestXmlInsert()
+        {
+
+            XmlHelper.Insert(@"D:\Private\App.config", "TestNode", "Test Text", "configuration");
+            //XmlHelper.UpdateText(@"D:\Private\App.config", "node test", "configuration/TestNode");
+            //XmlHelper.Delete(@"D:\Private\App.config", "configuration/TestNode");
+            XmlHelper.GetElementValues(@"D:\Private\App.config", "configuration/TestNode");
         }
         
 

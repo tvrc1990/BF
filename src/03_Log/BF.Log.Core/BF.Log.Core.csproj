@@ -1,16 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{99CD9123-A5BB-45C7-96FE-CDDF7CD673CB}</ProjectGuid>
+    <ProjectGuid>{326BF78D-A38D-4CC9-A6BB-16512349ED91}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BF.Unity.Common</RootNamespace>
-    <AssemblyName>BF.Unity.Common</AssemblyName>
+    <RootNamespace>BF.Log.Core</RootNamespace>
+    <AssemblyName>BF.Log.Core</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -39,10 +43,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppSettings.cs" />
+    <Compile Include="DebugLog.cs" />
+    <Compile Include="ErrorLog.cs" />
+    <Compile Include="ILog.cs" />
+    <Compile Include="InfoLog.cs" />
+    <Compile Include="LogProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Result.cs" />
-    <Compile Include="Singleton.cs" />
+    <Compile Include="WarnLog.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\01_Unity\BF.Unity.Common\BF.Unity.Common.csproj">
+      <Project>{99cd9123-a5bb-45c7-96fe-cddf7cd673cb}</Project>
+      <Name>BF.Unity.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{99CD9123-A5BB-45C7-96FE-CDDF7CD673CB}</ProjectGuid>
+    <ProjectGuid>{4A077858-8218-4977-A5B9-9EE617B3EFEB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BF.Unity.Common</RootNamespace>
-    <AssemblyName>BF.Unity.Common</AssemblyName>
+    <RootNamespace>Dapper.Extension</RootNamespace>
+    <AssemblyName>Dapper.Extension</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,10 +39,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppSettings.cs" />
+    <Compile Include="Attributes\BaseAttribute.cs" />
+    <Compile Include="Attributes\ColumnAttribute.cs" />
+    <Compile Include="Attributes\IdAttribute.cs" />
+    <Compile Include="Attributes\IgnoreAttribute.cs" />
+    <Compile Include="Attributes\TableAttribute.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="CustomDynamicBuilder.cs" />
+    <Compile Include="DapperEx.cs" />
+    <Compile Include="DapperHelper.cs" />
+    <Compile Include="DbBase.cs" />
+    <Compile Include="DynamicPropertyModel.cs" />
+    <Compile Include="ModelDes.cs" />
+    <Compile Include="ParamColumnModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Result.cs" />
-    <Compile Include="Singleton.cs" />
+    <Compile Include="SQL\OperationMethod.cs" />
+    <Compile Include="SQL\QueryOrder.cs" />
+    <Compile Include="SQL\SqlQuery.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BF.DB.Core\BF.DB.Core.csproj">
+      <Project>{8d181482-2cd7-4761-a0c8-0f5bc66e4d83}</Project>
+      <Name>BF.DB.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dapper.Library\Dapper.Library.csproj">
+      <Project>{8874400b-b890-41fb-bdea-87a5c48c18f5}</Project>
+      <Name>Dapper.Library</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
