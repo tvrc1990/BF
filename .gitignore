@@ -35,5 +35,5 @@
 /tests/Test.Dapper/obj
 /tests/Test.Calculator/bin
 /tests/Test.Calculator/obj
-/tests/Test.FluentValidation/Dapper.Library/bin
-/tests/Test.FluentValidation/Dapper.Library/obj
+/tests/Test.FluentValidation/bin
+/tests/Test.FluentValidation/obj
