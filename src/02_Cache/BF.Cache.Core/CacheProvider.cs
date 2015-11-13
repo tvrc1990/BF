@@ -17,10 +17,6 @@ namespace BF.Config.Core
         private static ICache<T> memoryCacheInstance;
         private static readonly object memoryCacheLock = new object();
 
-
-   
-
-
         public static ICache<T> XmlConfig
         {
             get
