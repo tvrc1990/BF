@@ -1,84 +1,88 @@
-Isptfwtx
-Zzymc
-Yzymc
-Lgymc
-Lyymc
-Ltqygjjgs
-Ltqysjgs
-Ltqyzjgs
-Ltqyxjgs
-Ltqyddnhs
-Nmzhzzgjjgs
-Nmzhzzsjgs
-Nmzhzzzjgs
-Nmzhzzxjgs
-Jtnmcjtncgs
-Jtnmcjtncddnhs
-Jtnmcjtmcgs
-Jtnmcjtmcddnhs
-Zfmjdbhs
-Xxjhs
-Xgzhs
-Fmtshs
-Wfhxjhs
-Wfhzyhs
-Weifhxjhs
-Weifhgzhs
-Weifhzyhs
-Zfklhxjhs
-Zfklhgzhs
-Zfklhzyhs
-Weifhzyhs
-Zfklhxjhs
-Zfklhgzhs
-Zfklhzyhs
-Fwgzxgzhs
-Wcgzxgzhs
-Qsgzxgzhs
-Lyzzywchs
-Lyzzwcl
-Lyzzxzzhs
-Bdjsxjsgls
-Fhtjxjsgls
-Jyxzzysr
-Jyxyzysr
-Jyxlgysr
-Jyxqtsr
-Gzxxclysr
-Gzxwcwgsr
-Gzxfwysr
-Gzxqtsr
-Ccxtdlzsr
-Ccxldlzsr
-Ccxcdlzsr
-Ccxfwczsr
-Ccxqtsr
-Jyxzzysr
-Gcdlfgzrcs
-Gcdlxjzrcs
-Glgcfgzrcs
-Glgcfghs
-Glgcxjzrcs
-Tynrsqfgzrcs
-Tynrsqfghs
-Tynrsqxjzrcs
-Hwsgyjljdfgzrcs
-Hwsgyjwsdgs
-Hwsgyjwsdfgzrc
-Tcdlfgzrcs
-Tcdlxjsgls
-Tcdlxjslmlb
-Cldlfgzrcs
-Cldlxjsgls
-Cldlxjslmlb
-Rhdlfgzrcs
-Rhdlxjsgls
-Rhdlxjslmlb
-Dhfgzrcs
-Dhxjshs
-Gdfgzrcs
-Gdxjshs
-Dsfgzrcs
-Ddsxjshs
-Zxdsfgzrcs
-Zxdsxjshs
+CREATE TABLE dbo.BaseSurvey
+( 
+     VillageId  INT NOT NULL IDENTITY(1, 1) PRIMARY KEY
+    ,Isptfwtx int
+    ,Zzymc nvarchar(500)
+    ,Yzymc nvarchar(500)
+    ,Lgymc nvarchar(500)
+    ,Lyymc nvarchar(500)
+    ,Ltqygjjgs nvarchar(500)
+    ,Ltqysjgs nvarchar(500)
+    ,Ltqyzjgs nvarchar(500)
+    ,Ltqyxjgs nvarchar(500)
+    ,Ltqyddnhs nvarchar(500)
+    ,Nmzhzzgjjgs nvarchar(500)
+    ,Nmzhzzsjgs nvarchar(500)
+    ,Nmzhzzzjgs nvarchar(500)
+    ,Nmzhzzxjgs nvarchar(500)
+    ,Jtnmcjtncgs nvarchar(500)
+    ,Jtnmcjtncddnhs nvarchar(500)
+    ,Jtnmcjtmcgs nvarchar(500)
+    ,Jtnmcjtmcddnhs nvarchar(500)
+    ,Zfmjdbhs nvarchar(500)
+    ,Xxjhs nvarchar(500)
+    ,Xgzhs nvarchar(500)
+    ,Fmtshs nvarchar(500)
+    ,Wfhxjhs nvarchar(500)
+    ,Wfhzyhs nvarchar(500)
+    ,Weifhxjhs nvarchar(500)
+    ,Weifhgzhs nvarchar(500)
+    ,Weifhzyhs nvarchar(500)
+    ,Zfklhxjhs nvarchar(500)
+    ,Zfklhgzhs nvarchar(500)
+    ,Zfklhzyhs nvarchar(500)
+    ,Weifhzyhs nvarchar(500)
+    ,Zfklhxjhs nvarchar(500)
+    ,Zfklhgzhs nvarchar(500)
+    ,Zfklhzyhs nvarchar(500)
+    ,Fwgzxgzhs nvarchar(500)
+    ,Wcgzxgzhs nvarchar(500)
+    ,Qsgzxgzhs nvarchar(500)
+    ,Lyzzywchs nvarchar(500)
+    ,Lyzzwcl nvarchar(500)
+    ,Lyzzxzzhs nvarchar(500)
+    ,Bdjsxjsgls nvarchar(500)
+    ,Fhtjxjsgls nvarchar(500)
+    ,Jyxzzysr nvarchar(500)
+    ,Jyxyzysr nvarchar(500)
+    ,Jyxlgysr nvarchar(500)
+    ,Jyxqtsr nvarchar(500)
+    ,Gzxxclysr nvarchar(500)
+    ,Gzxwcwgsr nvarchar(500)
+    ,Gzxfwysr nvarchar(500)
+    ,Gzxqtsr nvarchar(500)
+    ,Ccxtdlzsr nvarchar(500)
+    ,Ccxldlzsr nvarchar(500)
+    ,Ccxcdlzsr nvarchar(500)
+    ,Ccxfwczsr nvarchar(500)
+    ,Ccxqtsr nvarchar(500)
+    ,Jyxzzysr nvarchar(500)
+    ,Gcdlfgzrcs nvarchar(500)
+    ,Gcdlxjzrcs nvarchar(500)
+    ,Glgcfgzrcs nvarchar(500)
+    ,Glgcfghs nvarchar(500)
+    ,Glgcxjzrcs nvarchar(500)
+    ,Tynrsqfgzrcs nvarchar(500)
+    ,Tynrsqfghs nvarchar(500)
+    ,Tynrsqxjzrcs nvarchar(500)
+    ,Hwsgyjljdfgzrcs nvarchar(500)
+    ,Hwsgyjwsdgs nvarchar(500)
+    ,Hwsgyjwsdfgzrc nvarchar(500)
+    ,Tcdlfgzrcs nvarchar(500)
+    ,Tcdlxjsgls nvarchar(500)
+    ,Tcdlxjslmlb nvarchar(500)
+    ,Cldlfgzrcs nvarchar(500)
+    ,Cldlxjsgls nvarchar(500)
+    ,Cldlxjslmlb nvarchar(500)
+    ,Rhdlfgzrcs nvarchar(500)
+    ,Rhdlxjsgls nvarchar(500)
+    ,Rhdlxjslmlb nvarchar(500)
+    ,Dhfgzrcs nvarchar(500)
+    ,Dhxjshs nvarchar(500)
+    ,Gdfgzrcs nvarchar(500)
+    ,Gdxjshs nvarchar(500)
+    ,Dsfgzrcs nvarchar(500)
+    ,Ddsxjshs nvarchar(500)
+    ,Zxdsfgzrcs nvarchar(500)
+    ,Zxdsxjshs nvarchar(500) 
+)
