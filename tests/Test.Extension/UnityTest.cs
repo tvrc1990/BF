@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using BF.Unity.Extension;
 using BF.Unity.Helper;
-using BF.Log.Core;
+using BF.Core.Log;
 namespace Test.Extension
 {
     [TestClass]

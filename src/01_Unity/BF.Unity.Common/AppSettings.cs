@@ -34,22 +34,22 @@ namespace BF.Unity.Common
         /// <summary>
         /// 错误日志名称空间
         /// </summary>
-        public static readonly string ERROR_lOG_NAMESPACE = "BF.Log.ErrorLog";
+        public static readonly string ERROR_lOG_NAMESPACE = "BF.Core.Log.ErrorLog";
 
         /// <summary>
         /// 信息日志名称空间
         /// </summary>
-        public static readonly string INFO_LOG_NAMESPACE = "BF.Log.InfoLog";
+        public static readonly string INFO_LOG_NAMESPACE = "BF.Core.Log.InfoLog";
 
         /// <summary>
         /// DEBUG日志名称空间
         /// </summary>
-        public static readonly string DEBUG_LOG_NAMESPACE = "BF.Log.DebugLog";
+        public static readonly string DEBUG_LOG_NAMESPACE = "BF.Core.Log.DebugLog";
 
         /// <summary>
         /// 警告日志名称空间
         /// </summary>
-        public static readonly string WARM_LOG_NAMESPACE = "BF.Log.WarnLog"; 
+        public static readonly string WARM_LOG_NAMESPACE = "BF.Core.Log.WarnLog"; 
 
         #endregion
     }

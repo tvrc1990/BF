@@ -113,6 +113,7 @@ D:\Private\My code\BF v1\src\05_Validator\FluentValidation\bin\Debug\pl\FluentVa
 D:\Private\My code\BF v1\src\05_Validator\FluentValidation\bin\Debug\pt\FluentValidation.resources.dll
 D:\Private\My code\BF v1\src\05_Validator\FluentValidation\bin\Debug\sv\FluentValidation.resources.dll
 D:\Private\My code\BF v1\src\05_Validator\FluentValidation\bin\Debug\tr\FluentValidation.resources.dll
+D:\Private\My code\BF v1\src\05_Validator\FluentValidation\obj\Debug\FluentValidation.csprojResolveAssemblyReference.cache
 D:\Private\My code\BF v1\src\05_Validator\FluentValidation\obj\Debug\FluentValidation.Resources.Messages.cz.resources
 D:\Private\My code\BF v1\src\05_Validator\FluentValidation\obj\Debug\FluentValidation.Resources.Messages.resources
 D:\Private\My code\BF v1\src\05_Validator\FluentValidation\obj\Debug\FluentValidation.Resources.Messages.da.resources

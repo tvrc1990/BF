@@ -10,5 +10,6 @@ D:\Private\My code\BF\src\01_Unity\BF.Unity.Common\obj\Debug\BF.Unity.Common.dll
 D:\Private\My code\BF\src\01_Unity\BF.Unity.Common\obj\Debug\BF.Unity.Common.pdb
 D:\Private\My code\BF v1\src\01_Unity\BF.Unity.Common\bin\Debug\BF.Unity.Common.dll
 D:\Private\My code\BF v1\src\01_Unity\BF.Unity.Common\bin\Debug\BF.Unity.Common.pdb
+D:\Private\My code\BF v1\src\01_Unity\BF.Unity.Common\obj\Debug\BF.Unity.Common.csprojResolveAssemblyReference.cache
 D:\Private\My code\BF v1\src\01_Unity\BF.Unity.Common\obj\Debug\BF.Unity.Common.dll
 D:\Private\My code\BF v1\src\01_Unity\BF.Unity.Common\obj\Debug\BF.Unity.Common.pdb

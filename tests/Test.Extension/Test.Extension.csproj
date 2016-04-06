@@ -8,7 +8,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Test.Extension</RootNamespace>
     <AssemblyName>Test.Extension</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -16,6 +16,7 @@
     <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
     <IsCodedUITest>False</IsCodedUITest>
     <TestProjectType>UnitTest</TestProjectType>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -35,6 +36,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\BF\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
@@ -62,9 +66,9 @@
       <Project>{4575c83d-7c03-4000-a535-498c34648530}</Project>
       <Name>BF.Unity.Helper</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\src\03_Log\BF.Log.Core\BF.Log.Core.csproj">
-      <Project>{326bf78d-a38d-4cc9-a6bb-16512349ed91}</Project>
-      <Name>BF.Log.Core</Name>
+    <ProjectReference Include="..\..\src\03_Log\BF.Core.Log\BF.Core.Log.csproj">
+      <Project>{249a1341-826b-43c0-af6d-3b5aa366db36}</Project>
+      <Name>BF.Core.Log</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
