@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BF.Cache.Core;
+using System;
 using System.Runtime.Caching;
 namespace BF.Cache
 {
