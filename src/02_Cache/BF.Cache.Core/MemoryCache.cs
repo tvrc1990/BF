@@ -14,7 +14,7 @@ namespace BF.Cache
             ExpirationPolicy = expirationPolicy;
         }
 
-        ///
+        ///ttt
         /// 以秒为基础单位默认10分钟 ///
         public int TimeOut
         {
