@@ -15,7 +15,7 @@ namespace BF.Cache.Core
             cache = MemoryCache.Default;
         }
 
-        ///
+        ///ttt
         /// 以秒为基础单位默认10分钟 ///
         public int TimeOut
         {
