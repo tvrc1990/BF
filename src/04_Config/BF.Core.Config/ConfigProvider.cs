@@ -10,13 +10,13 @@ namespace BF.Core.Config
     /// <summary>
     /// 
     /// </summary>
-    public class ConfigProvider
+    public class ConfigProvider<T>
     {
 
-        private static IConfig<string> xmlConfigInstance;
+        private static IConfig<T> xmlConfigInstance;
         private static readonly object xmlConfigLock = new object();
 
-        public static IConfig<string> XmlConfig
+        public static IConfig<T> Xml
         {
             get
             {
@@ -35,9 +35,9 @@ namespace BF.Core.Config
         }
 
 
-        private static IConfig<string> Instance(string className)
+        private static IConfig<T> Instance(string className)
         {
-            return (IConfig<string>)Activator.CreateInstance(Type.GetType(className));
+            return (IConfig<T>)Activator.CreateInstance(typeof(XmlConfig<T>));
         }
 
 

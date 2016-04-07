@@ -9,13 +9,11 @@ namespace BF.Core.Config
     public interface IConfig<T>
     {
 
-        bool Update(string key, string value, string preKey = "");
+        bool Update(T value, string key = "");
 
-        bool Add(string key, string value, string preKey = "");
+        bool Delete(string key = "");
 
-        T Get(string key, string preKey = "");
-
-        List<T> GetArray(string key, string preKey = "");
+        T Get(string key = "");
 
     }
 }

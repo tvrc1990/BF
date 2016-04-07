@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
+using System.Xml.Serialization;
 
 namespace BF.Unity.Helper
 {
@@ -16,15 +18,16 @@ namespace BF.Unity.Helper
         {
             Execute(xmlFilePath, new Action(() =>
             {
-
                 var element = xmlDoc.CreateElement(nodeName);
                 element.InnerText = nodeText;
                 var xmlNode = xmlDoc.SelectSingleNode(parentNamespace);
                 xmlNode.AppendChild(element);
                 xmlDoc.Save(xmlFilePath);
             }));
+
             return true;
         }
+
         public static bool Insert(string xmlFilePath, string elementName, string attrValue, string attrName = "", string parentNamespace = "")
         {
             Execute(xmlFilePath, new Action(() =>
@@ -37,6 +40,7 @@ namespace BF.Unity.Helper
             }));
             return true;
         }
+
         public static bool UpdateText(string xmlFilePath, string nodeText, string namespaceUri = "")
         {
             Execute(xmlFilePath, new Action(() =>
@@ -93,6 +97,31 @@ namespace BF.Unity.Helper
 
             return result;
         }
+
+        public static List<string> GetInnerXML(string xmlFilePath, string namespaceUri, string attributeName = "")
+        {
+
+            var result = new List<string>();
+            Execute(xmlFilePath,
+              new Action(() =>
+              {
+                  if (string.IsNullOrEmpty(namespaceUri))
+                  {
+                      result.Add(xmlDoc.InnerXml);
+                  }
+                  else
+                  {
+                      var xmlNodes = xmlDoc.SelectNodes(namespaceUri);
+                      foreach (XmlNode node in xmlNodes)
+                      {
+                          result.Add(node.InnerXml);
+                      }
+                  }
+              }));
+
+            return result;
+        }
+
 
         private static void Execute(string xmlFilePath, Action func)
         {

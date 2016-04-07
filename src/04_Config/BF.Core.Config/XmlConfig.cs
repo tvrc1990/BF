@@ -1,5 +1,6 @@
 ﻿using BF.Unity.Common;
 using BF.Unity.Helper;
+using BF.Unity.Extension;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,31 +9,35 @@ using System.Threading.Tasks;
 
 namespace BF.Core.Config
 {
-    public class XmlConfig : IConfig<string>
+    public class XmlConfig<T> : IConfig<T>
     {
-        private string xmlPath = "";
+        private string xmlPath = AppDomain.CurrentDomain.BaseDirectory;
+
         public XmlConfig()
         {
-            this.xmlPath = AppSettings.DEFINED_CONFIG_PATH;
-        }
-        public bool Update(string key, string value, string preKey = "configuration/appSettings")
-        {
-            return XmlHelper.UpdateAttribute(xmlPath, key, value, preKey);
+            this.xmlPath = string.Format("{0}\\{1}.config", AppDomain.CurrentDomain.BaseDirectory, typeof(T).Name);
         }
 
-        public bool Add(string key, string value, string preKey = "configuration/appSettings")
+
+
+        public bool Update(T value, string key = "")
         {
-           return XmlHelper.Insert(xmlPath, key, value, key, preKey);
+            FileHelper.Delete(xmlPath,true);
+
+            return true;
         }
 
-        public string Get(string key, string preKey = "configuration/appSettings")
+        public T Get(string key = "")
         {
-            return XmlHelper.GetElementValues(xmlPath, preKey).FirstOrDefault();
+            var xml = XmlHelper.GetInnerXML(xmlPath, "").LastOrDefault();
+            return xml.ToObject<T>();
         }
 
-        public List<string> GetArray(string key, string preKey = "configuration/appSettings")
+
+        public bool Delete(string key = "")
         {
-            return XmlHelper.GetElementValues(xmlPath, preKey,"value");
+            FileHelper.Delete(xmlPath, true);
+            return true;
         }
     }
 }

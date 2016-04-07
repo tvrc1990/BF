@@ -65,10 +65,10 @@ namespace Test.Extension
 
                 content = e.ToLog();
             }
-             Assert.AreNotEqual("", content);
+            Assert.AreNotEqual("", content);
         }
 
-          [TestMethod]
+        [TestMethod]
         public void TestXmlInsert()
         {
 
@@ -77,7 +77,26 @@ namespace Test.Extension
             //XmlHelper.Delete(@"D:\Private\App.config", "configuration/TestNode");
             XmlHelper.GetElementValues(@"D:\Private\App.config", "configuration/TestNode");
         }
-        
 
+        [TestMethod]
+        public void Test_Object_To_XML()
+        {
+            var app = new AppTest() { Path = "TEST 1" };
+            var xmlStrig = app.ToXml();
+        }
+
+        [TestMethod]
+        public void Test_XML_To_Object()
+        {
+            var app = new AppTest() { Path = "TEST 1" };
+            var xmlStrig = app.ToXml();
+
+            var app2 = xmlStrig.ToObject<AppTest>();
+
+        }
+    }
+    public class AppTest
+    {
+        public string Path { set; get; }
     }
 }

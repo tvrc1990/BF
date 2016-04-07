@@ -1,0 +1,13 @@
+D:\Private\My code\BF v1\tests\Test.Config\bin\Debug\Test.Config.dll
+D:\Private\My code\BF v1\tests\Test.Config\bin\Debug\Test.Config.pdb
+D:\Private\My code\BF v1\tests\Test.Config\bin\Debug\BF.Core.Config.dll
+D:\Private\My code\BF v1\tests\Test.Config\bin\Debug\BF.Unity.Common.dll
+D:\Private\My code\BF v1\tests\Test.Config\bin\Debug\BF.Unity.Helper.dll
+D:\Private\My code\BF v1\tests\Test.Config\bin\Debug\BF.Unity.Extension.dll
+D:\Private\My code\BF v1\tests\Test.Config\bin\Debug\BF.Core.Config.pdb
+D:\Private\My code\BF v1\tests\Test.Config\bin\Debug\BF.Unity.Common.pdb
+D:\Private\My code\BF v1\tests\Test.Config\bin\Debug\BF.Unity.Helper.pdb
+D:\Private\My code\BF v1\tests\Test.Config\bin\Debug\BF.Unity.Extension.pdb
+D:\Private\My code\BF v1\tests\Test.Config\obj\Debug\Test.Config.csprojResolveAssemblyReference.cache
+D:\Private\My code\BF v1\tests\Test.Config\obj\Debug\Test.Config.dll
+D:\Private\My code\BF v1\tests\Test.Config\obj\Debug\Test.Config.pdb

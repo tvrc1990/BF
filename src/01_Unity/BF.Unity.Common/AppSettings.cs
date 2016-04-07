@@ -29,7 +29,7 @@ namespace BF.Unity.Common
         /// <summary>
         /// XML配置处理名称空间
         /// </summary>
-        public static readonly string XML_CONFIG_NAMESPACE = "BF.Config.Core.XmlConfig";
+        public static readonly string XML_CONFIG_NAMESPACE = "BF.Core.Config.XmlConfig";
 
         /// <summary>
         /// 错误日志名称空间

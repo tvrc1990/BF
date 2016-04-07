@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace BF.Core.Config
 {
-    class ConfigModel
+    public class ConfigModel
     {
+        public string Key { set; get; }
+        public string ConfigXML { set; get; }
     }
 }

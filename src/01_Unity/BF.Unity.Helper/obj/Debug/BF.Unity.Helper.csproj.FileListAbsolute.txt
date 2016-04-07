@@ -10,5 +10,6 @@ D:\Private\My code\BF\src\01_Unity\BF.Unity.Helper\obj\Debug\BF.Unity.Helper.dll
 D:\Private\My code\BF\src\01_Unity\BF.Unity.Helper\obj\Debug\BF.Unity.Helper.pdb
 D:\Private\My code\BF v1\src\01_Unity\BF.Unity.Helper\bin\Debug\BF.Unity.Helper.dll
 D:\Private\My code\BF v1\src\01_Unity\BF.Unity.Helper\bin\Debug\BF.Unity.Helper.pdb
+D:\Private\My code\BF v1\src\01_Unity\BF.Unity.Helper\obj\Debug\BF.Unity.Helper.csprojResolveAssemblyReference.cache
 D:\Private\My code\BF v1\src\01_Unity\BF.Unity.Helper\obj\Debug\BF.Unity.Helper.dll
 D:\Private\My code\BF v1\src\01_Unity\BF.Unity.Helper\obj\Debug\BF.Unity.Helper.pdb

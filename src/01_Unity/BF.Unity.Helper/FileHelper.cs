@@ -124,5 +124,18 @@ namespace BF.Unity.Helper
             }
             return sb.ToString();
         }
+
+        public static bool Write(string filePath, string contents, bool isAppend = false)
+        {
+
+            var fileInfo = new FileInfo(filePath);
+            var stream = fileInfo.CreateText();
+            FileStream fs = new FileStream(filePath, isCreate ? FileMode.Append : FileMode.Truncate);
+        
+            stream.Write(contents);
+
+            return true;
+        }
+
     }
 }
