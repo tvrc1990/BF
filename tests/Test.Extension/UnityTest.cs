@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using BF.Unity.Extension;
 using BF.Unity.Helper;
 using BF.Core.Log;
+using BF.Unity.Common;
 namespace Test.Extension
 {
     [TestClass]
@@ -93,6 +94,12 @@ namespace Test.Extension
 
             var app2 = xmlStrig.ToObject<AppTest>();
 
+        }
+
+         [TestMethod]
+        public void Test_Setting_Read()
+        {
+           var result= AppSettings.Get("DEFINED_CONFIG_PATH");
         }
     }
     public class AppTest

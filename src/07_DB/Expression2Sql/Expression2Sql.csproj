@@ -4,13 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{99CD9123-A5BB-45C7-96FE-CDDF7CD673CB}</ProjectGuid>
+    <ProjectGuid>{67058C2A-6531-4BCC-9FDA-067A4D51674A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BF.Unity.Common</RootNamespace>
-    <AssemblyName>BF.Unity.Common</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <RootNamespace>Expression2Sql</RootNamespace>
+    <AssemblyName>Expression2Sql</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,7 +32,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -40,13 +40,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppSettings.cs" />
+    <Compile Include="BaseExpression2Sql.cs" />
+    <Compile Include="DbSqlParser\MySQLSqlParser.cs" />
+    <Compile Include="DbSqlParser\OracleSqlParser.cs" />
+    <Compile Include="DbSqlParser\SQLiteSqlParser.cs" />
+    <Compile Include="DbSqlParser\SQLServerSqlParser.cs" />
+    <Compile Include="Expression2SqlEx.cs" />
+    <Compile Include="Expression2Sql\ParameterExpression2Sql.cs" />
+    <Compile Include="Expression2Sql\BinaryExpression2Sql.cs" />
+    <Compile Include="Expression2Sql\ConstantExpression2Sql.cs" />
+    <Compile Include="Expression2Sql\MemberExpression2Sql.cs" />
+    <Compile Include="Expression2Sql\MethodCallExpression2Sql.cs" />
+    <Compile Include="Expression2Sql\NewArrayExpression2Sql.cs" />
+    <Compile Include="Expression2Sql\NewExpression2Sql.cs" />
+    <Compile Include="Expression2Sql\UnaryExpression2Sql.cs" />
+    <Compile Include="IDbSqlParser.cs" />
+    <Compile Include="IExpression2Sql.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Result.cs" />
-    <Compile Include="Singleton.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
+    <Compile Include="Expression2SqlProvider.cs" />
+    <Compile Include="SqlBuilder.cs" />
+    <Compile Include="ExpressionToSql.cs" />
+    <Compile Include="StaticClass\ExpressionToSqlOracle.cs" />
+    <Compile Include="StaticClass\ExpressionToSqlSQLite.cs" />
+    <Compile Include="StaticClass\ExpressionToSqlMySQL.cs" />
+    <Compile Include="StaticClass\ExpressionToSqlSQLServer.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

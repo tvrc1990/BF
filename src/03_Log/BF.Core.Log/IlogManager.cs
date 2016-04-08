@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BF.Core.Config
+namespace BF.Core.Log
 {
-    public interface IConfigManage
+    public interface IlogManager
     {
         string Get(string key);
         bool Update(string key, string content);

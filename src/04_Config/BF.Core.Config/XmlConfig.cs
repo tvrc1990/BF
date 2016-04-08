@@ -11,7 +11,7 @@ namespace BF.Core.Config
 {
     public class XmlConfig<T> : IConfig<T>
     {
-        private string xmlPath = AppDomain.CurrentDomain.BaseDirectory;
+        private string xmlPath = string.Empty;
 
         public XmlConfig()
         {

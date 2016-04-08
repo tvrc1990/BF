@@ -42,6 +42,7 @@
     <Compile Include="ConfigModel.cs" />
     <Compile Include="ConfigProvider.cs" />
     <Compile Include="IConfig.cs" />
+    <Compile Include="IConfigManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="XmlConfig.cs" />
   </ItemGroup>
