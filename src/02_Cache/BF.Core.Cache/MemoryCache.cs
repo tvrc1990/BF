@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BF.Unity.Common;
+using System;
 using System.Runtime.Caching;
 namespace BF.Core.Cache
 {
@@ -18,7 +19,7 @@ namespace BF.Core.Cache
         public int TimeOut
         {
             //app config undefined
-            get { return _timeOut == 0 ? 600 : _timeOut; }
+            get { return _timeOut == 0 ? AppSettings.CACHE_KEEP_TIME : _timeOut; }
             set { _timeOut = value; }
         }
 
