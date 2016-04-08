@@ -11,11 +11,11 @@ namespace BF.Core.Config
 {
     public class XmlConfig<T> : IConfig<T>
     {
-        private string xmlPath = string.Empty;
+        private string xmlPath = AppSettings.DEFINED_CONFIG_PATH;
 
         public XmlConfig()
         {
-            this.xmlPath = string.Format("{0}\\{1}.config", AppDomain.CurrentDomain.BaseDirectory, typeof(T).Name);
+            this.xmlPath = string.Format("{0}\\{1}.config", xmlPath, typeof(T).Name);
         }
 
         public T Get(string key = "")

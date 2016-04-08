@@ -100,6 +100,10 @@ namespace Test.Extension
         public void Test_Setting_Read()
         {
            var result= AppSettings.Get("DEFINED_CONFIG_PATH");
+           if (string.IsNullOrEmpty(result))
+           {
+               Assert.Fail();
+           }
         }
     }
     public class AppTest
