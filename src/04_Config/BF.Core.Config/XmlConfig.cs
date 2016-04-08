@@ -18,26 +18,12 @@ namespace BF.Core.Config
             this.xmlPath = string.Format("{0}\\{1}.config", AppDomain.CurrentDomain.BaseDirectory, typeof(T).Name);
         }
 
-
-
-        public bool Update(T value, string key = "")
-        {
-            FileHelper.Delete(xmlPath,true);
-
-            return true;
-        }
-
         public T Get(string key = "")
         {
-            var xml = XmlHelper.GetInnerXML(xmlPath, "").LastOrDefault();
+            var xml = XmlHelper.GetInnerXML(xmlPath, key).LastOrDefault();
             return xml.ToObject<T>();
         }
 
 
-        public bool Delete(string key = "")
-        {
-            FileHelper.Delete(xmlPath, true);
-            return true;
-        }
     }
 }

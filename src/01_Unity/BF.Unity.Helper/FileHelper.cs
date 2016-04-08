@@ -29,32 +29,32 @@ namespace BF.Unity.Helper
         /// <summary>
         /// 删除文件（到回收站[可选]）
         /// </summary>
-        /// <param name="filename">要删除的文件名</param>
+        /// <param name="filePath">要删除的文件名</param>
         /// <param name="isSendToRecycleBin">是否删除到回收站</param>
-        public static void Delete(string filename, bool isSendToRecycleBin = false)
+        public static void Delete(string filePath, bool isSendToRecycleBin = false)
         {
             if (isSendToRecycleBin)
             {
-                Microsoft.VisualBasic.FileIO.FileSystem.DeleteFile(filename, UIOption.OnlyErrorDialogs, RecycleOption.SendToRecycleBin);
+                Microsoft.VisualBasic.FileIO.FileSystem.DeleteFile(filePath, UIOption.OnlyErrorDialogs, RecycleOption.SendToRecycleBin);
             }
             else
             {
-                File.Delete(filename);
+                File.Delete(filePath);
             }
         }
 
         /// <summary>
         /// 设置或取消文件的指定<see cref="FileAttributes"/>属性
         /// </summary>
-        /// <param name="fileName">文件名</param>
+        /// <param name="filePath">文件名</param>
         /// <param name="attribute">要设置的文件属性</param>
         /// <param name="isSet">true为设置，false为取消</param>
-        public static void SetAttribute(string fileName, FileAttributes attribute, bool isSet)
+        public static void SetAttribute(string filePath, FileAttributes attribute, bool isSet)
         {
-            FileInfo fi = new FileInfo(fileName);
+            FileInfo fi = new FileInfo(filePath);
             if (!fi.Exists)
             {
-                throw new FileNotFoundException("要设置属性的文件不存在。", fileName);
+                throw new FileNotFoundException("要设置属性的文件不存在。", filePath);
             }
             if (isSet)
             {
@@ -69,13 +69,13 @@ namespace BF.Unity.Helper
         /// <summary>
         /// 获取文件版本号
         /// </summary>
-        /// <param name="fileName"> 完整文件名 </param>
+        /// <param name="filePath"> 完整文件名 </param>
         /// <returns> 文件版本号 </returns>
-        public static string GetVersion(string fileName)
+        public static string GetVersion(string filePath)
         {
-            if (File.Exists(fileName))
+            if (File.Exists(filePath))
             {
-                FileVersionInfo fvi = FileVersionInfo.GetVersionInfo(fileName);
+                FileVersionInfo fvi = FileVersionInfo.GetVersionInfo(filePath);
                 return fvi.FileVersion;
             }
             return null;
@@ -84,11 +84,11 @@ namespace BF.Unity.Helper
         /// <summary>
         /// 获取文件的MD5值
         /// </summary>
-        /// <param name="fileName"> 文件名 </param>
+        /// <param name="filePath"> 文件名 </param>
         /// <returns> 32位MD5 </returns>
-        public static string GetFileMd5(string fileName)
+        public static string GetFileMd5(string filePath)
         {
-            FileStream fs = new FileStream(fileName, FileMode.Open, FileAccess.Read, FileShare.Read);
+            FileStream fs = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read);
             const int bufferSize = 1024 * 1024;
             byte[] buffer = new byte[bufferSize];
 
@@ -125,15 +125,22 @@ namespace BF.Unity.Helper
             return sb.ToString();
         }
 
-        public static bool Write(string filePath, string contents, bool isAppend = false)
+        /// <summary>
+        /// 写文件
+        /// </summary>
+        /// <param name="filePath">文件路径</param>
+        /// <param name="content">写入内容</param>
+        /// <param name="isAppend">追加/覆盖</param>
+        /// <returns></returns>
+        public static bool Write(string filePath, string content, bool isAppend = false)
         {
-
-            var fileInfo = new FileInfo(filePath);
-            var stream = fileInfo.CreateText();
-            FileStream fs = new FileStream(filePath, isCreate ? FileMode.Append : FileMode.Truncate);
-        
-            stream.Write(contents);
-
+            using (var fileStream = new FileStream(filePath, isAppend ? FileMode.Append : FileMode.Truncate))
+            {
+                var contentBytes = new byte[content.Length];
+                Encoding.UTF8.GetEncoder().GetBytes(content.ToCharArray(), 0, content.Length, contentBytes, 0, true);
+                fileStream.Seek(0, SeekOrigin.Begin);
+                fileStream.Write(contentBytes, 0, contentBytes.Length);
+            }
             return true;
         }
 

@@ -9,10 +9,6 @@ namespace BF.Core.Config
     public interface IConfig<T>
     {
 
-        bool Update(T value, string key = "");
-
-        bool Delete(string key = "");
-
         T Get(string key = "");
 
     }
