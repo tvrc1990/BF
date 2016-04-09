@@ -3,3 +3,8 @@ D:\Private\Expression2Sql-master\Expression2Sql-master\Expression2Sql\bin\Debug\
 D:\Private\Expression2Sql-master\Expression2Sql-master\Expression2Sql\obj\Debug\Expression2Sql.csprojResolveAssemblyReference.cache
 D:\Private\Expression2Sql-master\Expression2Sql-master\Expression2Sql\obj\Debug\Expression2Sql.dll
 D:\Private\Expression2Sql-master\Expression2Sql-master\Expression2Sql\obj\Debug\Expression2Sql.pdb
+D:\Private\My code\BF v1\src\07_DB\Expression2Sql\bin\Debug\Expression2Sql.dll
+D:\Private\My code\BF v1\src\07_DB\Expression2Sql\bin\Debug\Expression2Sql.pdb
+D:\Private\My code\BF v1\src\07_DB\Expression2Sql\obj\Debug\Expression2Sql.csprojResolveAssemblyReference.cache
+D:\Private\My code\BF v1\src\07_DB\Expression2Sql\obj\Debug\Expression2Sql.dll
+D:\Private\My code\BF v1\src\07_DB\Expression2Sql\obj\Debug\Expression2Sql.pdb

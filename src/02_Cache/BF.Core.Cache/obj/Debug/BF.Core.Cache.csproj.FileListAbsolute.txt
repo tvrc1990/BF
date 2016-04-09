@@ -4,6 +4,5 @@ D:\Private\My code\BF v1\src\02_Cache\BF.Core.Cache\bin\Debug\BF.Unity.Common.dl
 D:\Private\My code\BF v1\src\02_Cache\BF.Core.Cache\bin\Debug\BF.Unity.Extension.dll
 D:\Private\My code\BF v1\src\02_Cache\BF.Core.Cache\bin\Debug\BF.Unity.Common.pdb
 D:\Private\My code\BF v1\src\02_Cache\BF.Core.Cache\bin\Debug\BF.Unity.Extension.pdb
-D:\Private\My code\BF v1\src\02_Cache\BF.Core.Cache\obj\Debug\BF.Core.Cache.csprojResolveAssemblyReference.cache
 D:\Private\My code\BF v1\src\02_Cache\BF.Core.Cache\obj\Debug\BF.Core.Cache.dll
 D:\Private\My code\BF v1\src\02_Cache\BF.Core.Cache\obj\Debug\BF.Core.Cache.pdb

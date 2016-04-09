@@ -6,6 +6,5 @@ D:\Private\My code\BF v1\src\04_Config\BF.Core.Config\bin\Debug\BF.Unity.Helper.
 D:\Private\My code\BF v1\src\04_Config\BF.Core.Config\bin\Debug\BF.Unity.Common.pdb
 D:\Private\My code\BF v1\src\04_Config\BF.Core.Config\bin\Debug\BF.Unity.Extension.pdb
 D:\Private\My code\BF v1\src\04_Config\BF.Core.Config\bin\Debug\BF.Unity.Helper.pdb
-D:\Private\My code\BF v1\src\04_Config\BF.Core.Config\obj\Debug\BF.Core.Config.csprojResolveAssemblyReference.cache
 D:\Private\My code\BF v1\src\04_Config\BF.Core.Config\obj\Debug\BF.Core.Config.dll
 D:\Private\My code\BF v1\src\04_Config\BF.Core.Config\obj\Debug\BF.Core.Config.pdb
