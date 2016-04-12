@@ -1,10 +1,8 @@
 D:\Private\My code\BF v1\src\03_Log\BF.Core.Log\bin\Debug\BF.Core.Log.dll
 D:\Private\My code\BF v1\src\03_Log\BF.Core.Log\bin\Debug\BF.Core.Log.pdb
-D:\Private\My code\BF v1\src\03_Log\BF.Core.Log\bin\Debug\BF.Unity.Common.dll
-D:\Private\My code\BF v1\src\03_Log\BF.Core.Log\bin\Debug\BF.Unity.Extension.dll
+D:\Private\My code\BF v1\src\03_Log\BF.Core.Log\bin\Debug\BF.Unity.dll
 D:\Private\My code\BF v1\src\03_Log\BF.Core.Log\bin\Debug\log4net.dll
-D:\Private\My code\BF v1\src\03_Log\BF.Core.Log\bin\Debug\BF.Unity.Common.pdb
-D:\Private\My code\BF v1\src\03_Log\BF.Core.Log\bin\Debug\BF.Unity.Extension.pdb
+D:\Private\My code\BF v1\src\03_Log\BF.Core.Log\bin\Debug\BF.Unity.pdb
 D:\Private\My code\BF v1\src\03_Log\BF.Core.Log\bin\Debug\log4net.xml
 D:\Private\My code\BF v1\src\03_Log\BF.Core.Log\obj\Debug\BF.Core.Log.csprojResolveAssemblyReference.cache
 D:\Private\My code\BF v1\src\03_Log\BF.Core.Log\obj\Debug\BF.Core.Log.dll

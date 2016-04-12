@@ -58,17 +58,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\01_Unity\BF.Unity.Common\BF.Unity.Common.csproj">
-      <Project>{99cd9123-a5bb-45c7-96fe-cddf7cd673cb}</Project>
-      <Name>BF.Unity.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\src\01_Unity\BF.Unity.Extension\BF.Unity.Extension.csproj">
-      <Project>{9cd329ce-8072-4a61-ad25-081146395f79}</Project>
-      <Name>BF.Unity.Extension</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\src\01_Unity\BF.Unity.Helper\BF.Unity.Helper.csproj">
-      <Project>{4575c83d-7c03-4000-a535-498c34648530}</Project>
-      <Name>BF.Unity.Helper</Name>
+    <ProjectReference Include="..\..\..\BF\src\01_Unity\BF.Unity\BF.Unity.csproj">
+      <Project>{ee9cd955-3b4c-4351-91cc-e89e0fb8fd59}</Project>
+      <Name>BF.Unity</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\src\03_Log\BF.Core.Log\BF.Core.Log.csproj">
       <Project>{249a1341-826b-43c0-af6d-3b5aa366db36}</Project>
