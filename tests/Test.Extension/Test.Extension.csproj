@@ -58,7 +58,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\BF\src\01_Unity\BF.Unity\BF.Unity.csproj">
+    <ProjectReference Include="..\..\src\01_Unity\BF.Unity\BF.Unity.csproj">
       <Project>{ee9cd955-3b4c-4351-91cc-e89e0fb8fd59}</Project>
       <Name>BF.Unity</Name>
     </ProjectReference>

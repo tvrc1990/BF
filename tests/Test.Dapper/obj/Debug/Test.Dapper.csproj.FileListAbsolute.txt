@@ -1,0 +1,5 @@
+D:\Private\My code\BF v1\tests\Test.Dapper\bin\Debug\Test.Dapper.dll.config
+D:\Private\My code\BF v1\tests\Test.Dapper\bin\Debug\Test.Dapper.dll
+D:\Private\My code\BF v1\tests\Test.Dapper\bin\Debug\Test.Dapper.pdb
+D:\Private\My code\BF v1\tests\Test.Dapper\obj\Debug\Test.Dapper.dll
+D:\Private\My code\BF v1\tests\Test.Dapper\obj\Debug\Test.Dapper.pdb
